@@ -1,0 +1,155 @@
+        *{
+            margin:0px;
+            padding: 0px;
+            font-family: monospace;
+        }
+        .menu{
+            height:100px;
+            background-image: linear-gradient(to right, pink, white);
+            margin-top: 100px;
+            border: 2px solid black;
+        }
+     
+        .leftmenu 
+        {   width:25%;
+            float:left;
+            line-height:90px ;
+/*            background-image: linear-gradient(to right, white , pink);*/
+        }
+        .rightmenu{
+            margin-top: 
+/*            background-image: linear-gradient(to right, red , yellow);*/
+        }
+        .leftmenu h4 {
+            padding-left: 25px;
+            font-size: 30px;
+            font-weight: bolder;
+        } 
+        .rightmenu ul li {
+            display: inline-block;
+            font-size: 20px;
+            list-style: none;
+            line-height: 100px;
+            margin-left: 0px;
+            font-weight:bold; 
+           margin-right: 10px; 
+        }
+        .rightmenu ul {
+            margin-right: 20px;
+        }
+        li:hover {
+            background:white; 
+            color: orange;
+        }
+        #container {
+            margin-top:10px; 
+            overflow: hidden;
+        }
+        #sliderbox {
+            
+            width: 6000px;
+            position:relative;
+            animation-name: slideranimation;
+            animation-duration: 20s;
+            animation-iteration-count:infinite;
+                
+        }
+        #sliderbox img {
+            width:1500px; 
+            height: 600px;
+            float: left;
+        }
+        @keyframes slideranimation {
+            0% {
+                left:0px
+            }
+            20% {
+                left:0px
+            }
+            25% {
+                left:-1500px
+            }
+            45% {
+                left:-1500px
+            }
+            50% {
+                left:-3000px
+            }
+            70% {
+                left:-3000px;
+            }
+            75% {
+                left:-4500px;
+            }
+        }
+        #trans{
+            background-image: url("https://i.stack.imgur.com/tSuLr.jpg") ;
+        }
+        #trans h2 {
+            font-size: 40px;
+            margin-left: 40%;
+            margin-top: 20px; 
+        }
+        #pkgbox {
+            width:90%;
+            height:1000px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background:black; 
+            background-image: url("https://www.fitnesstrainingcenter.in/wp-content/uploads/2018/06/Gym-in-pimpri-chinchwad-1.jpg") 
+        }
+        #pkg1 {
+            position: relative;
+            width: 25%;
+            height: 40%;
+            background: orange;
+            left: 3%;
+            top:5%;
+            
+        }
+        #text1 {
+            color: red;
+            position: relative;
+            top:-10%;
+            font-size: 20px;
+            
+        }
+         #pkg2 {
+            position: relative;
+            width: 25%;
+            height: 85%;
+            background: red;
+            left: 30%;
+            top: -35%;
+             background-image: url("https://fitt.co/nyc/wp-content/uploads/sites/37/2018/01/crossfit-hells-kitchen-image-via-@crossfithellskitchen-Instagram-e1515607416499.jpg");
+            
+        }
+         #pkg3 {
+            position: relative;
+            height: 40%;
+            width: 25%;
+            background: pink;
+            left: 3%;
+            top:-750px;
+            background-image: url("https://images-na.ssl-images-amazon.com/images/I/614etjLsa8L._SX425_.jpg");
+        }
+          #pkg4 {
+            position: relative;
+            height: 40%;
+            width: 40%;
+            background: yellow;
+            background-image: url("http://thedancezone.co.in/wp-content/uploads/2015/12/14368727162754dance.jpg");
+            left: 57%;
+            top: -159%;
+            
+        }
+          #pkg5 {
+            position: relative;
+            background: aqua;
+            height: 40%;
+            width: 40%;
+            background-image: url("https://sciblogs.co.nz/app/uploads/2018/03/sciblogs.co_.nzappuploads201803blogs.otago_.ac_.nzpubhealthexpertfiles201803dietary-counselling-e25bbd783e9d8c077fa3816ac8c9f54b2bacbca5-20ba2d3fe05c796defe408a7788a1db5937582b3.png");
+            left: 57%;
+            top:-155%;
+            
+        }
