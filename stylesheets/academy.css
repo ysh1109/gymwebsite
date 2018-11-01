@@ -1,13 +1,25 @@
 *{
     margin:0;
 }
+#top_bar{
+    position:fixed;
+    width: 100%;
+}
+#logo
+{
+    display:inline-block;
+    position:absolute;
+    border-bottom: 2px solid grey;
+}
 nav{
     background: black;
-    
+    width: 80%;
+    display:inline-block;
+    margin-left: 10%;
 }
 #navbar_links{
     text-align: center;
-    padding: 20px;
+    padding: 55px;
 }
 #navbar_links li{
     cursor:pointer; 
@@ -24,4 +36,7 @@ nav{
 }
 #navbar_links li:hover .nav_link{
     color:black;
+}
+#slideshow{
+    background: red;
 }
