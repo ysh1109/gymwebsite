@@ -22,7 +22,7 @@
                 left:50%;
                 opacity: 0;
                 animation: website_links ease-in-out 2s;
-                animation-delay: 2s;
+                animation-delay: 4s;
                 animation-fill-mode: forwards;
                 text-decoration:none;
                 color:white;
@@ -52,7 +52,7 @@
                 color:black;
                 font-size:50px;
                 animation: website_links ease-in-out 2s;
-                animation-delay: 3.7s;    
+                animation-delay: 6s;    
                 animation-fill-mode: forwards;
             }
             #academy_link_image{
@@ -65,23 +65,43 @@
                 height: 100%;
 /*                overflow:hidden;*/
             }
-            #welcome_message{
+            #diss_msg{
+                text-align: center;
+                opacity: 0;
                 position:absolute;
-                left: 30%;
+                top: 1%;
+                left: 45%;
+                animation: gymName1 ease-in-out 5s;
+                z-index: 10;
+                color:grey;
+               font-family: 'Roboto Slab', serif;
+            }
+            #welcome_message{
+                overflow-x:hidden;
+                left: 32%;
+                opacity:0;
+                position:absolute;
                 font-size: 20px;
                 z-index: 10;
-                color:red;
+                display:inline;
                 animation: gymName ease-in-out 2s;
+                animation-delay:3s;
                 animation-fill-mode: forwards;
+                color:grey;
                 transition: all 0.4 linear;
                font-family: 'Roboto Slab', serif;
             }
+            
             @keyframes website_links{
                 from{ opacity:0; }
                 to{ opacity:1;  }
             }
             @keyframes gymName{
-                from{opacity:0; top:20%;}
-                to{opacity:1; top:15%;}
+                from{opacity:0; top:25%;}
+                to{opacity:1; top:20%;}
+            }
+            @keyframes gymName1{
+                from{opacity:0; top:8%;}
+                to{opacity:1; top:3%;}
             }
         
