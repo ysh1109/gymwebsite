@@ -22,23 +22,94 @@
         </nav>
     </div>
         <div id="content">
-        <div id="slideshow">
-            <div id="img_1">
+        <div id="slideshow" class="ss">
+            <div id="img_1" class="active slide_show_img">
                 <img class="slideshow_1_img" src="https://www.winsport.ca/images/ptc/951x400_ptcHome.jpg" width="80%" height="500px">
             </div>
-            <div id="img_2">
+            <div id="img_2" class="inactive slide_show_img">
                 <img class="slideshow_1_img" src="https://www.winsport.ca/images/951x300/10245_PTC%202%20Week%20Trial_WebBanner_951x400.jpg" width="80%" height="500px">
+                
+            </div>
+            <div id="img_3" class="inactive slide_show_img">
+                <img class="slideshow_1_img" src="http://yycfitexpo.ca/wp-content/uploads/2016/02/Kickboxing-Class_Woman-Web.jpg" width="80%" height="500px">
+                
+            </div>
+            <div id="img_4" class="inactive slide_show_img">
+                <img class="slideshow_1_img" src="https://nationalpti.edu/wp-content/uploads/2018/05/NationalPTI-of-Arizona-Website.png" width="80%" height="500px">
                 
             </div>
             <div id="slide_show_navigation_dots">
                 <ul id="ssnd">
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
+                    <li><button id="slide_1" onclick="click_change_slide(1)" class="slideshow_navigation slide_1"></button></li>
+                    <li><button id="slide_2" onclick="click_change_slide(2)" class="slideshow_navigation slide_2"></button></li>
+                    <li><button id="slide_3" onclick="click_change_slide(3)" class="slideshow_navigation slide_3"></button></li>
+                    <li><button id="slide_4" onclick="click_change_slide(4)" class="slideshow_navigation slide_4"></button></li>
                 </ul>
             </div>
         </div>
         </div>
     </body>
+    <script>
+        var ss, active_slide=1;
+        var slides = document.getElementsByClassName("slide_show_img");
+        function fade_in(op, el)
+        {
+            if(op<10)
+            {
+                    el.style.opacity = op*0.1;
+                    op+=1;
+                    setTimeout(fade_in, 50, op, el);
+            }
+        }
+        function fade_out(op, el)
+        {
+            if(op>1)
+            {
+                    el.style.opacity = op*0.1;
+                    op-=1;
+                    setTimeout(fade_in, 50, op, el);
+            }
+        }
+        function transition(i, j, k)
+        {
+            console.log("j is "+j);
+            console.log("i is "+i);
+            fade_out(9, j);
+            j.className = "inactive slide_show_img";
+            k.style.backgroundImage = "url('res/images/dot_inactive.png')";
+            j = document.getElementById("img_"+i);
+            k = document.getElementById("slide_"+i);
+            active_slide=i;
+            k.style.backgroundImage = "url('res/images/dot_active.png')";
+            j.className = "active slide_show_img";
+            j.style.opacity=0;
+            fade_in(0, j);
+            return i;
+        }
+        function slide_show(i, j, k)
+        {
+            i = transition(i, j, k);
+            j = document.getElementById("img_"+i);
+            k = document.getElementById("slide_"+i);
+            if(i<4)
+            {
+                i+=1;
+                ss = setTimeout(slide_show, 3000, i, j, k);}
+            else
+            {
+                console.log("i after completion is "+i);
+                console.log(ss);
+                ss = setTimeout(slide_show, 3000, 1, document.getElementById("img_4"), document.getElementById("slide_4"));
+            }   
+        }
+        setTimeout(slide_show(1, document.getElementById("img_1"), document.getElementById("slide_1")), 2000);
+        function click_change_slide(num)
+        {   
+                //var all_slides = document.getElementsByClassName("slide_show_img");
+                clearTimeout(ss);
+                    console.log("Found");
+                    transition(num, document.getElementById("img_"+active_slide), document.getElementById("slide_"+active_slide));
+                ss=setTimeout(slide_show, 3000, num%4+1, document.getElementById("img_"+num), document.getElementById("slide_"+num));
+        }
+    </script>
 </html>
