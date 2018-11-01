@@ -5,8 +5,11 @@
         </title>
         <link rel="stylesheet" type="text/css" href="stylesheets/academy.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     </head>
-    <body>
+    <body class="divs">
         <div id="top_bar">
             <div id="logo">
                 <img src="https://cdn.shopifycloud.com/hatchful-web/assets/313d73fa42f04a46213abc6267b4d074.png"  width="130px">
@@ -20,7 +23,7 @@
                 <li><a href="#" id="contact" class="nav_link">CONTACT</a></li>
                 </ul>    
         </nav>
-    </div>
+        </div>
         <div id="content">
         <div id="slideshow" class="ss">
             <div id="img_1" class="active slide_show_img">
@@ -48,6 +51,11 @@
             </div>
         </div>
         </div>
+        <footer>
+            <div id="footer_content">
+                
+            </div>
+        </footer>
     </body>
     <script>
         var ss, active_slide=1;
@@ -112,4 +120,5 @@
                 ss=setTimeout(slide_show, 3000, num%4+1, document.getElementById("img_"+num), document.getElementById("slide_"+num));
         }
     </script>
+    
 </html>

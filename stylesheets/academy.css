@@ -16,7 +16,7 @@
 nav{
     
     opacity: 0.9;
-    background: black;
+    background: linear-gradient(to right, black, black);
     width: 80%;
     display:inline-block;
     margin-left: 10%;
@@ -53,7 +53,6 @@ nav{
     top: 470px;
     margin:0px;
     padding:0;
-    
     left: 46.5%;
 }
 #ssnd li{
@@ -75,7 +74,6 @@ nav{
 }
 .slide_show_img{
     position:absolute;
-    background:yellow;
     margin-left: 10%;
     width: 80%;
 }
@@ -101,4 +99,46 @@ nav{
 @keyframes img_dspr{
     from:{opacity:1}
     to:{opacity:0}
+}
+
+footer{
+    position: relative;
+    top: 100%;
+    z-index: 21;
+    color:white;
+    font-weight: bold;
+    height: 20%;
+    background-color:black;
+    opacity: 0.9;
+}
+@media only screen and (max-width: 800px)
+{
+    #logo{
+        display:none;
+    }
+    nav{
+        opacity: 0.9;
+        background: linear-gradient(to right, black, black);
+        margin-left:0px;
+        width: 100%;
+        display:inline-block;
+    }
+    #navbar_links{
+        text-align: center;
+        padding: 15px;
+    }
+    
+    #content{
+        position:relative;
+        top: 12%;
+    }
+    .slide_show_img{
+        position:absolute;
+        margin-left: 0;
+        width: 100%;
+    }
+    .slide_show_img img{
+        object-fit: cover;
+        background:red;
+    }
 }
