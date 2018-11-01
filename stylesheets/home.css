@@ -2,15 +2,21 @@
             margin:0px;
             padding: 0px;
             font-family: monospace;
+            
         }
         #header{
-               background: black;
+               
+        
+                background-image: url("https://wallpapercave.com/wp/Ak1KOOT.jpg");
+                background-repeat: no-repeat;
+            background-size: cover;
+                opacity: ;
             }
         #logo {
             position: relative;
             width:30%;
             height: 200px;
-            border: 2px solid black;
+            opacity: 0.3;
             padding-top: 0px;
             
         }   
@@ -54,27 +60,24 @@
         object-fit: cover;
     }
         .menu{
+            position: relative;
+            top:-70px;
             height:100px;
-            background-image: linear-gradient(to right, pink, white);
-            margin-top:0px;
+            margin-left: 22%;
+            margin-right: 25%;
+            background-image: linear-gradient(to right, white, white);
+            
+            border-radius:10px;
             border: 2px solid black;
         }
      
-        .leftmenu 
-        {   width:25%;
-            float:left;
-            line-height:90px ;
-/*            background-image: linear-gradient(to right, white , pink);*/
-        }
+       
         .rightmenu{
-            margin-top: 
+            margin-left: 10%;
+            
 /*            background-image: linear-gradient(to right, red , yellow);*/
         }
-        .leftmenu h4 {
-            padding-left: 25px;
-            font-size: 30px;
-            font-weight: bolder;
-        } 
+        
         .rightmenu ul li {
             display: inline-block;
             font-size: 20px;
@@ -82,7 +85,10 @@
             line-height: 100px;
             margin-left: 0px;
             font-weight:bold; 
-           margin-right: 10px; 
+           margin-right: 20px;
+           
+            
+              
         }
         .rightmenu ul {
             margin-right: 20px;
@@ -92,13 +98,17 @@
             color: orange;
         }
         #container {
-            margin-top:10px; 
+            position: relative;
+            margin-top:; 
             overflow: hidden;
+            top:-111px;
+            z-index: -20;
         }
         #sliderbox {
             
             width: 6000px;
             position:relative;
+            opacity: 0.7;
             animation-name: slideranimation;
             animation-duration: 20s;
             animation-iteration-count:infinite;
