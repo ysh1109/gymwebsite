@@ -3,10 +3,60 @@
             padding: 0px;
             font-family: monospace;
         }
+        #header{
+               background: black;
+            }
+        #logo {
+            position: relative;
+            width:30%;
+            height: 200px;
+            border: 2px solid black;
+            padding-top: 0px;
+            
+        }   
+
+        #info{
+            width: 22%;
+            height: 5%;
+            margin-right: 2%;
+            float: right;
+            position: relative;
+            top:-180px;
+            border: 2px solid;
+             border-right:black;
+             border-left:black;
+            border-bottom-color: orange;
+            font-size: 20px;
+            font-weight:bold; 
+            color:orange;
+            
+        }
+        #infolist {
+            list-style-type: none;
+            padding: 3px;
+        }
+        #address {
+            width: 22%;
+            height: 2%;
+            margin-right: -25%; ;
+            float: right;
+            font-size: 20px;
+            position: relative;
+            top:-70px;
+            margin-top: 20px;     
+            
+        }
+        #address a {
+            color: orange;
+            text-decoration: none;
+        }
+        #logo img {
+        object-fit: cover;
+    }
         .menu{
             height:100px;
             background-image: linear-gradient(to right, pink, white);
-            margin-top: 100px;
+            margin-top:0px;
             border: 2px solid black;
         }
      
@@ -96,7 +146,7 @@
             margin-left: 50px;
             margin-right: 50px;
             background:black; 
-            background-image: url("https://www.fitnesstrainingcenter.in/wp-content/uploads/2018/06/Gym-in-pimpri-chinchwad-1.jpg") 
+             
         }
         #pkg1 {
             position: relative;
