@@ -84,6 +84,9 @@ li:hover
     background:black; 
     color: orange;
 }
+.rightmenu ul li a{
+    color:black;
+}
 #container
 {
     position: relative;
