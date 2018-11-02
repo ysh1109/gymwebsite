@@ -79,7 +79,7 @@
     font-weight:bold; 
     cursor:pointer;
 }
-li:hover 
+rightmenu li:hover 
 {
     background:black; 
     color: orange;
@@ -95,21 +95,35 @@ li:hover
 }
 #trans
 {
-    background-image: url("https://i.stack.imgur.com/tSuLr.jpg") ;
+    background: white;
+    color:black;
+    border: 2px solid black;
+    
+    text-align: center;
+    font-family: 'PT Serif', serif;
 }
 #trans h2
 {
     font-size: 40px;
-    margin-left: 40%;
-    margin-top: 20px; 
+}
+#services{
+    background: url("https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+#services_flex{
+    width: 90%;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    display:flex;
+    position:relative;
+}
+.services_flex_cl{
+    margin: 20px;
 }
 #pkgbox
 {
     width:90%;
     height:1000px;
-    margin-left: 50px;
-    margin-right: 50px;
-    background:black;      
+    margin-left: 5%;   
 }
 #pkg1 
 {
@@ -120,6 +134,14 @@ li:hover
     left: 3%;
     top:5%;    
 }
+.img_lnk{
+    position:absolute;
+    top: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
 #text1
 {
     color: red;
@@ -127,45 +149,8 @@ li:hover
     top:-10%;
     font-size: 20px;    
 }
-#pkg2 
-{
-    position: relative;
-    width: 25%;
-    height: 85%;
-    background: red;
-    left: 30%;
-    top: -35%;
-     background-image: url("https://fitt.co/nyc/wp-content/uploads/sites/37/2018/01/crossfit-hells-kitchen-image-via-@crossfithellskitchen-Instagram-e1515607416499.jpg");            
-}
-#pkg3
-{
-    position: relative;
-    height: 40%;
-    width: 25%;
-    background: pink;
-    left: 3%;
-    top:-750px;
-    background-image: url("https://images-na.ssl-images-amazon.com/images/I/614etjLsa8L._SX425_.jpg");
-}
-#pkg4
-{
-    position: relative;
-    height: 40%;
-    width: 40%;
-    background: yellow;
-    background-image: url("http://thedancezone.co.in/wp-content/uploads/2015/12/14368727162754dance.jpg");
-    left: 57%;
-    top: -159%;
-}
-#pkg5
-{
-    position: relative;
-    background: aqua;
-    height: 40%;
-    width: 40%;
-    background-image: url("https://sciblogs.co.nz/app/uploads/2018/03/sciblogs.co_.nzappuploads201803blogs.otago_.ac_.nzpubhealthexpertfiles201803dietary-counselling-e25bbd783e9d8c077fa3816ac8c9f54b2bacbca5-20ba2d3fe05c796defe408a7788a1db5937582b3.png");
-    left: 57%;
-    top:-155%;
+.flex_col_div{
+    position:relative;
 }
 .inactive
 {
