@@ -1,215 +1,188 @@
-        *{
-            margin:0px;
-            padding: 0px;
-            font-family: monospace;
-            
-        }
-        #header{
-               
-        
-                background-image: url("https://wallpapercave.com/wp/Ak1KOOT.jpg");
-                background-repeat: no-repeat;
-            background-size: cover;
-                opacity: ;
-            }
-        #logo {
-            position: relative;
-            width:30%;
-            height: 200px;
-            opacity: 0.3;
-            padding-top: 0px;
-            
-        }   
-
-        #info{
-            width: 22%;
-            height: 5%;
-            margin-right: 2%;
-            float: right;
-            position: relative;
-            top:-180px;
-            border: 2px solid;
-             border-right:black;
-             border-left:black;
-            border-bottom-color: orange;
-            font-size: 20px;
-            font-weight:bold; 
-            color:orange;
-            
-        }
-        #infolist {
-            list-style-type: none;
-            padding: 3px;
-        }
-        #address {
-            width: 22%;
-            height: 2%;
-            margin-right: -25%; ;
-            float: right;
-            font-size: 20px;
-            position: relative;
-            top:-70px;
-            margin-top: 20px;     
-            
-        }
-        #address a {
-            color: orange;
-            text-decoration: none;
-        }
-        #logo img {
-        object-fit: cover;
-    }
-        .menu{
-            position: relative;
-            top:-70px;
-            height:100px;
-            margin-left: 22%;
-            margin-right: 25%;
-            background-image: linear-gradient(to right, white, white);
-            
-            border-radius:10px;
-            border: 2px solid black;
-        }
-     
-       
-        .rightmenu{
-            margin-left: 10%;
-            
-/*            background-image: linear-gradient(to right, red , yellow);*/
-        }
-        
-        .rightmenu ul li {
-            display: inline-block;
-            font-size: 20px;
-            list-style: none;
-            line-height: 100px;
-            margin-left: 0px;
-            font-weight:bold; 
-           margin-right: 20px;
-           
-            
-              
-        }
-        .rightmenu ul {
-            margin-right: 20px;
-        }
-        li:hover {
-            background:white; 
-            color: orange;
-        }
-        #container {
-            position: relative;
-            margin-top:; 
-            overflow: hidden;
-            top:-111px;
-            z-index: -20;
-        }
-        #sliderbox {
-            
-            width: 6000px;
-            position:relative;
-            opacity: 0.7;
-            animation-name: slideranimation;
-            animation-duration: 20s;
-            animation-iteration-count:infinite;
-                
-        }
-        #sliderbox img {
-            width:1500px; 
-            height: 600px;
-            float: left;
-        }
-        @keyframes slideranimation {
-            0% {
-                left:0px
-            }
-            20% {
-                left:0px
-            }
-            25% {
-                left:-1500px
-            }
-            45% {
-                left:-1500px
-            }
-            50% {
-                left:-3000px
-            }
-            70% {
-                left:-3000px;
-            }
-            75% {
-                left:-4500px;
-            }
-        }
-        #trans{
-            background-image: url("https://i.stack.imgur.com/tSuLr.jpg") ;
-        }
-        #trans h2 {
-            font-size: 40px;
-            margin-left: 40%;
-            margin-top: 20px; 
-        }
-        #pkgbox {
-            width:90%;
-            height:1000px;
-            margin-left: 50px;
-            margin-right: 50px;
-            background:black; 
-             
-        }
-        #pkg1 {
-            position: relative;
-            width: 25%;
-            height: 40%;
-            background: orange;
-            left: 3%;
-            top:5%;
-            
-        }
-        #text1 {
-            color: red;
-            position: relative;
-            top:-10%;
-            font-size: 20px;
-            
-        }
-         #pkg2 {
-            position: relative;
-            width: 25%;
-            height: 85%;
-            background: red;
-            left: 30%;
-            top: -35%;
-             background-image: url("https://fitt.co/nyc/wp-content/uploads/sites/37/2018/01/crossfit-hells-kitchen-image-via-@crossfithellskitchen-Instagram-e1515607416499.jpg");
-            
-        }
-         #pkg3 {
-            position: relative;
-            height: 40%;
-            width: 25%;
-            background: pink;
-            left: 3%;
-            top:-750px;
-            background-image: url("https://images-na.ssl-images-amazon.com/images/I/614etjLsa8L._SX425_.jpg");
-        }
-          #pkg4 {
-            position: relative;
-            height: 40%;
-            width: 40%;
-            background: yellow;
-            background-image: url("http://thedancezone.co.in/wp-content/uploads/2015/12/14368727162754dance.jpg");
-            left: 57%;
-            top: -159%;
-            
-        }
-          #pkg5 {
-            position: relative;
-            background: aqua;
-            height: 40%;
-            width: 40%;
-            background-image: url("https://sciblogs.co.nz/app/uploads/2018/03/sciblogs.co_.nzappuploads201803blogs.otago_.ac_.nzpubhealthexpertfiles201803dietary-counselling-e25bbd783e9d8c077fa3816ac8c9f54b2bacbca5-20ba2d3fe05c796defe408a7788a1db5937582b3.png");
-            left: 57%;
-            top:-155%;
-            
-        }
+*{
+    margin:0px;
+    padding: 0px;    
+}
+#header
+{
+    position:relative;
+    background-image: url("https://wallpapercave.com/wp/Ak1KOOT.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20%;
+}
+#logo
+{
+    display:inline-block;
+    position: relative;
+    width:30%;
+    background-color: yellow;
+    height: 200px;
+}   
+#rgt_info{
+    width: 20%;
+    margin-right: 20px;
+    display:inline-block;
+    float:right;
+    height: 200px;
+    margin-top: 20px;
+}
+#info
+{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-bottom-color: orange;
+    font-size: 20px;
+    font-weight:bold; 
+     color:orange;        
+}
+#infolist
+{
+    list-style-type: none;
+    padding: 3px;
+}
+#address
+{
+    font-size: 20px;   
+    margin-top: 20px;
+}
+#address a
+{
+    color: orange;
+    text-decoration: none;
+}
+#logo img 
+{
+    object-fit: cover;
+}
+.menu
+{
+    position: absolute;
+    top: 30%;
+    margin-left: 22%;
+    background-image: linear-gradient(to right, white, white);            
+    border-radius:7px;
+    border: 2px solid black;
+    z-index: 10;
+}
+.rightmenu ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 30px 20px;
+    font-weight:bold; 
+    cursor:pointer;
+}
+li:hover 
+{
+    background:black; 
+    color: orange;
+}
+#container
+{
+    position: relative;
+    margin-top:; 
+    overflow: hidden;
+}
+#trans
+{
+    background-image: url("https://i.stack.imgur.com/tSuLr.jpg") ;
+}
+#trans h2
+{
+    font-size: 40px;
+    margin-left: 40%;
+    margin-top: 20px; 
+}
+#pkgbox
+{
+    width:90%;
+    height:1000px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background:black;      
+}
+#pkg1 
+{
+    position: relative;
+    width: 25%;
+    height: 40%;
+    background: orange;
+    left: 3%;
+    top:5%;    
+}
+#text1
+{
+    color: red;
+    position: relative;
+    top:-10%;
+    font-size: 20px;    
+}
+#pkg2 
+{
+    position: relative;
+    width: 25%;
+    height: 85%;
+    background: red;
+    left: 30%;
+    top: -35%;
+     background-image: url("https://fitt.co/nyc/wp-content/uploads/sites/37/2018/01/crossfit-hells-kitchen-image-via-@crossfithellskitchen-Instagram-e1515607416499.jpg");            
+}
+#pkg3
+{
+    position: relative;
+    height: 40%;
+    width: 25%;
+    background: pink;
+    left: 3%;
+    top:-750px;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/614etjLsa8L._SX425_.jpg");
+}
+#pkg4
+{
+    position: relative;
+    height: 40%;
+    width: 40%;
+    background: yellow;
+    background-image: url("http://thedancezone.co.in/wp-content/uploads/2015/12/14368727162754dance.jpg");
+    left: 57%;
+    top: -159%;
+}
+#pkg5
+{
+    position: relative;
+    background: aqua;
+    height: 40%;
+    width: 40%;
+    background-image: url("https://sciblogs.co.nz/app/uploads/2018/03/sciblogs.co_.nzappuploads201803blogs.otago_.ac_.nzpubhealthexpertfiles201803dietary-counselling-e25bbd783e9d8c077fa3816ac8c9f54b2bacbca5-20ba2d3fe05c796defe408a7788a1db5937582b3.png");
+    left: 57%;
+    top:-155%;
+}
+.inactive
+{
+    display:none;
+    animation: img_dspr ease-in-out 2s;
+    animation-fill-mode: forwards;
+}
+#ssnd {
+    position:absolute;
+    top: 360px;
+    margin:0px;
+    padding:0;
+    left: 46.5%;
+}
+#ssnd li{
+    z-index: 21;
+    display:inline;
+}
+.slideshow_navigation{
+    border:none;
+    width: 20px;
+    height: 20px;
+    background: url("/res/images/dot_inactive.png");
+    cursor:pointer;
+    margin-right: 5px;
+    z-index:22;
+}
+.slideshow_navigation:hover{
+    background: url("/res/images/dot_active.png");
+    z-index: 20;
+}

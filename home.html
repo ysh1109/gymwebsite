@@ -14,41 +14,58 @@
                 <div id = "logo">
                     <img src = "res/images/b.PNG" width="300px" height="240px">
                 </div> 
-                <div id="info">
-                    <ul id="infolist">
-                        <li id = "firstli"><i class = "fa fa-home"></i>+91-922266565</li>
-                    	<li id = "secondli"><i class = "fa fa-home"></i>MON-SAT 6.00am-8.00 am</li>
-                    	<li id = "thirdli"><i class = "fa fa-phone"></i>SUN 8.00am</li>
-                    	
-                    </ul>
-                </div>
-                <div id="address">
-                    <a href ="https://www.google.co.in/maps/dir/23.2333312,77.4324224/sandeep+fitness+ayodhya+nagar/@23.2546729,77.4205113,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x397c6a1e4d7678c7:0x84c98f9ad204e7ce!2m2!1d77.4745578!2d23.2769274">AYODHYA NAGAR, BHOPAL</a>
+                <div id="rgt_info">
+                    <div id="info">
+                        <ul id="infolist">
+                            <li id = "firstli"><i class = "fa fa-home"></i>+91-922266565</li>
+                            <li id = "secondli"><i class = "fa fa-home"></i>MON-SAT 6.00am-8.00 am</li>
+                            <li id = "thirdli"><i class = "fa fa-phone"></i>SUN 8.00am</li>
+
+                        </ul>
+                    </div>
+                    <div id="address">
+                        <a href ="https://www.google.co.in/maps/dir/23.2333312,77.4324224/sandeep+fitness+ayodhya+nagar/@23.2546729,77.4205113,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x397c6a1e4d7678c7:0x84c98f9ad204e7ce!2m2!1d77.4745578!2d23.2769274">AYODHYA NAGAR, BHOPAL</a>
+                    </div>
                 </div>
             </div>
-            <div class="menu">
+            <nav class="menu">
                 <div  class="rightmenu" >
                     	<ul id="list">
-                        <li id = "firstli"><i class = "fa fa-home"></i>HOME</li>
-                    	<li id = "secondli"><i class = "fa fa-home"></i>SERVICES</li>
-                    	<li id = "thirdli"><i class = "fa fa-phone"></i>ABOUT</li>
-                    	<li id = "fouthli"><i class = "fa fa-home"></i>PACKAGES</li>
-                        <li id = "fifthli"><i class = "fa fa-book"></i>WORKS</li>
-                    	    
-                    
+                        <li id = "firstli"><a href="#" class = "fa fa-home"></a>HOME</li>
+                    	<li id = "secondli"><a href="#" class = "fa fa-home"></a>SERVICES</li>
+                    	<li id = "thirdli"><a href="#" class = "fa fa-phone"></a>ABOUT</li>
+                    	<li id = "fouthli"><a href="#" class = "fa fa-home"></a>PACKAGES</li>
+                        <li id = "fifthli"><a href="#" class = "fa fa-book"></a>WORKS</li>
                    	 </ul>
-		    </div>			
-            </div>
+		      </div>			
+            </nav>
         <div id = "container">
-            <div id = "sliderbox">
-                <img src = "https://wallpapercave.com/wp/wp2639574.jpg"/>
-                <img src = "https://cdn.hipwallpaper.com/i/24/61/kKZdnD.jpg"/>
-                <img src = "http://www.biocenit.cat/mypics/109/1090247/gym-body-wallpaper.jpg"/>
-                <img src = "https://www.wallpaperflare.com/static/458/49/191/hailee-steinfeld-singer-celebrity-gym-clothes-wallpaper.jpg"/>
-            
-            
-            
+             <div id="slideshow" class="ss">
+                <div id="img_1" class="active slide_show_img">
+                    <img class="slideshow_1_img" src="https://www.winsport.ca/images/ptc/951x400_ptcHome.jpg" width="100%" height="400px">
+                </div>
+                <div id="img_2" class="inactive slide_show_img">
+                    <img class="slideshow_1_img" src="https://www.winsport.ca/images/951x300/10245_PTC%202%20Week%20Trial_WebBanner_951x400.jpg" width="100%" height="400px">
+
+                </div>  
+                <div id="img_3" class="inactive slide_show_img">
+                    <img class="slideshow_1_img" src="http://yycfitexpo.ca/wp-content/uploads/2016/02/Kickboxing-Class_Woman-Web.jpg" width="100%" height="400px">
+
+                </div>
+                <div id="img_4" class="inactive slide_show_img">
+                    <img class="slideshow_1_img" src="https://nationalpti.edu/wp-content/uploads/2018/05/NationalPTI-of-Arizona-Website.png" width="100%" height="400px">
+
+                </div>
+                <div id="slide_show_navigation_dots">
+                    <ul id="ssnd">
+                        <li><button id="slide_1" onclick="click_change_slide(1)" class="slideshow_navigation slide_1"></button></li>
+                        <li><button id="slide_2" onclick="click_change_slide(2)" class="slideshow_navigation slide_2"></button></li>
+                        <li><button id="slide_3" onclick="click_change_slide(3)" class="slideshow_navigation slide_3"></button></li>
+                        <li><button id="slide_4" onclick="click_change_slide(4)" class="slideshow_navigation slide_4"></button></li>
+                    </ul>
+                </div>
             </div>
+        </div>
         </div>
         <div id = "trans">
             <h2>SERVICES</h2>
@@ -72,15 +89,17 @@
             </div>
             
             <div id = "container1">
-            <div id = "sliderbox1">
-                <img src = "https://i.ytimg.com/vi/V5Yw55f6rEE/maxresdefault.jpg"/>
-                <img src = "https://i.ytimg.com/vi/vUPUoYc8yxk/maxresdefault.jpg"/>
-                <img src = "https://i.ytimg.com/vi/fiEv2sls4Fg/maxresdefault.jpg"/>
-                <img src = "https://i.ytimg.com/vi/WohpPi-YFeY/maxresdefault.jpg"/>
-            
-            
-            
-            </div>
+                <div id = "sliderbox1">
+<!--
+                    <img src = "https://i.ytimg.com/vi/V5Yw55f6rEE/maxresdefault.jpg"/>
+                    <img src = "https://i.ytimg.com/vi/vUPUoYc8yxk/maxresdefault.jpg"/>
+                    <img src = "https://i.ytimg.com/vi/fiEv2sls4Fg/maxresdefault.jpg"/>
+                    <img src = "https://i.ytimg.com/vi/WohpPi-YFeY/maxresdefault.jpg"/>
+-->
+
+
+
+                </div>
             </div>
         
             <div id = "trans">
@@ -98,14 +117,70 @@
             
         
         
-        </div>
+            </div>
         
-        </div>
     </body>    
 <script>
-    if(window.outerWidth<1065)
+        var ss, active_slide=1;
+        var slides = document.getElementsByClassName("slide_show_img");
+        function fade_in(op, el)
         {
-            
+            if(op<20)
+            {
+                    el.style.opacity = op/2*0.1;
+                    op+=1;
+                    setTimeout(fade_in, 20, op, el);
+            }
+        }
+        function fade_out(op, el)
+        {
+            if(op>1)
+            {
+                    el.style.opacity = op*0.1;
+                    op-=1;
+                    setTimeout(fade_in, 50, op, el);
+            }
+        }
+        function transition(i, j, k)
+        {
+            console.log("j is "+j);
+            console.log("i is "+i);
+            fade_out(9, j);
+            j.className = "inactive slide_show_img";
+            k.style.backgroundImage = "url('res/images/dot_inactive.png')";
+            j = document.getElementById("img_"+i);
+            k = document.getElementById("slide_"+i);
+            active_slide=i;
+            k.style.backgroundImage = "url('res/images/dot_active.png')";
+            j.className = "active slide_show_img";
+            j.style.opacity=0;
+            fade_in(0, j);
+            return i;
+        }
+        function slide_show(i, j, k)
+        {
+            i = transition(i, j, k);
+            j = document.getElementById("img_"+i);
+            k = document.getElementById("slide_"+i);
+            if(i<4)
+            {
+                i+=1;
+                ss = setTimeout(slide_show, 3000, i, j, k);}
+            else
+            {
+                console.log("i after completion is "+i);
+                console.log(ss);
+                ss = setTimeout(slide_show, 3000, 1, document.getElementById("img_4"), document.getElementById("slide_4"));
+            }   
+        }
+        setTimeout(slide_show(1, document.getElementById("img_1"), document.getElementById("slide_1")), 2000);
+        function click_change_slide(num)
+        {   
+                //var all_slides = document.getElementsByClassName("slide_show_img");
+                clearTimeout(ss);
+                    console.log("Found");
+                    transition(num, document.getElementById("img_"+active_slide), document.getElementById("slide_"+active_slide));
+                ss=setTimeout(slide_show, 3000, num%4+1, document.getElementById("img_"+num), document.getElementById("slide_"+num));
         }
     </script>
 </html>

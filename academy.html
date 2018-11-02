@@ -115,7 +115,6 @@
         {   
                 //var all_slides = document.getElementsByClassName("slide_show_img");
                 clearTimeout(ss);
-                    console.log("Found");
                     transition(num, document.getElementById("img_"+active_slide), document.getElementById("slide_"+active_slide));
                 ss=setTimeout(slide_show, 3000, num%4+1, document.getElementById("img_"+num), document.getElementById("slide_"+num));
         }
