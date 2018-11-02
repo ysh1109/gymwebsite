@@ -8,22 +8,32 @@
     background-image: url("https://wallpapercave.com/wp/Ak1KOOT.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20%;
 }
 #logo
 {
     display:inline-block;
     position: relative;
-    width:30%;
-    background-color: yellow;
-    height: 200px;
+    width: 20%;
+    text-align: center;
 }   
+#br_nme{
+    position: absolute;
+    width: 260px;
+    z-index: 11;
+    top: 70%;
+    left: 5%;
+}
+#logo h2{
+    color:red;
+    font-family: 'Bree Serif', serif;
+}
+#logo img{
+}
 #rgt_info{
     width: 20%;
     margin-right: 20px;
     display:inline-block;
     float:right;
-    height: 200px;
     margin-top: 20px;
 }
 #info
@@ -50,16 +60,12 @@
     color: orange;
     text-decoration: none;
 }
-#logo img 
-{
-    object-fit: cover;
-}
 .menu
 {
+    background-color: rgba(255,255,255,0.9);
     position: absolute;
-    top: 30%;
-    margin-left: 22%;
-    background-image: linear-gradient(to right, white, white);            
+    top: 20%;
+    margin-left: 22%;           
     border-radius:7px;
     border: 2px solid black;
     z-index: 10;
