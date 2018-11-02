@@ -14,12 +14,12 @@
             <h1>Sandeep's Fitness World!</h1>
         </div>
     <div id="Gym">
-        <video autoplay muted loop id="gym_link_image" onclick="open_gym()"><source src="https://www.youtube.com/watch?v=M73oCW311X0" type="video/mp4"></video>
-        <a id="gym_page_link" href="home.html">Gym</a>  
+        <video autoplay muted loop id="gym_link_image" class = "to_zoom_gym" onclick="open_gym()"><source src="res/vids/v1.mp4" type="video/mp4"></video>
+        <a id="gym_page_link" class="to_zoom_gym g_l" href="home.html">Gym</a>  
     </div>
     <div id="academy">
-        <video autoplay muted loop id="academy_link_image"  onclick="open_academy()"><source src="res/vids/v2.mp4"></video>
-        <a id="academy_page_link" href="#">Academy</a>
+        <video autoplay muted loop id="academy_link_image"  class = "to_zoom_academy" onclick="open_academy()"><source src="res/vids/v2.mp4"></video>
+        <a id="academy_page_link" href="academy.html" class = "to_zoom_academy">Academy</a>
     </div>
         </div>
     <script>
@@ -57,21 +57,6 @@
                 l2.style.width="100%";
                 x.style.width="100%";
                 y.style.width="100%";
-        }
-        var owx=x.width;var twx=x.width+50;var ohx=x.height; var thx=x.height+50;
-        var owy=y.width;var twy=y.width+50;var ohy=y.height; var thy=y.height+50;
-        
-        ga.onmouseover = x.onmouseover   =   function(){transch(x, twx, thx, 0.5);}
-        x.onmouseout    =   function(){transch(x, owx, ohx, 0.2);}
-        aa.onmouseover = y.onmouseover   =   function(){transch(y, twy, thy, 0.5);}
-        y.onmouseout    =   function(){transch(y, owy, ohy, 0.2);}
-        l2.style.overflow="hidden";
-        function transch(ob, a, b, c)
-        {
-//            ob.style.opacity=c;
-            ob.width=a;
-            ob.height=b;
-            l2.style.overflow="hidden";
         }
         window.onresize = function()
         {

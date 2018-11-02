@@ -5,7 +5,7 @@
 #header
 {
     position:relative;
-    background-image: url("https://wallpapercave.com/wp/Ak1KOOT.jpg");
+    background-image: url("https://images.template.net/wp-content/uploads/2015/04/Patterns-Black-Textures-Grunge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -65,6 +65,7 @@
 .menu
 {
     background-color: rgba(255,255,255);
+    backface-visibility: hidden;
     position: absolute;
     top: 17%;
     margin-left: 22%;           
@@ -79,10 +80,10 @@
     font-weight:bold; 
     cursor:pointer;
 }
-rightmenu li:hover 
+.rightmenu li:hover 
 {
     background:black; 
-    color: orange;
+    color: white;
 }
 .rightmenu ul li a{
     color:black;
@@ -107,9 +108,19 @@ rightmenu li:hover
     font-size: 40px;
 }
 #services{
-    background: url("https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background: ;
+    z-index: 12;
 }
-#services_flex{
+#blur{
+    background: url("https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 700px;
+    width: 1350px;
+    position: absolute;
+    filter: blur(5px);
+    z-index: 9;
+}
+#services_flex, #tranformation_flex, #review_flex{
+    z-index: 11;
     width: 90%;
     margin-left: 5%;
     flex-wrap: wrap;

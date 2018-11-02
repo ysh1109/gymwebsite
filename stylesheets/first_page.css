@@ -1,107 +1,129 @@
-
-            *{
-                margin:0;
-                overflow-y:hidden;
-            }
-            #header{
-                width: 100%;
-                height: 20%;
-            }
-            #Gym{
-                position:relative;
-                z-index: 1;
-                overflow-x:hidden;
-                overflow-y:hidden;
-                width:50%;  
-                transition: all .5s linear;
-            }
-            #gym_page_link{
-                position:absolute;
-                z-index: 9;
-                top:50%;
-                left:50%;
-                opacity: 0;
-                animation: website_links ease-in-out 2s;
-                animation-delay: 4s;
-                animation-fill-mode: forwards;
-                text-decoration:none;
-                color:white;
-                font-size: 50px;
-                font-family: 'KoHo', sans-serif;
-            }
-            #gym_link_image{
-                object-fit: cover;
-/*                opacity: 0.2;*/
-                cursor:pointer;
-                transition: all .3s linear; 
-                
-            }
-            #academy{
-                background-color:white;
-                position:relative;
+*{
+    margin:0;
+}
+#header
+{
+    width: 100%;
+    height: 20%;
+}
+#Gym
+{
+    position:relative;
+    z-index: 1;
+    overflow:hidden;
+    width:50%;  
+    height: 95%;
+    transition: all .5s linear;
+}
+#gym_page_link
+{
+    position:absolute;
+    z-index: 9;
+    top:50%;
+    left:50%;
+    opacity: 0;
+    animation: website_links ease-in-out 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    text-decoration:none;
+    color:white;
+    font-size: 50px;        
+    transition: transform 0.3s;
+    font-family: 'KoHo', sans-serif;
+}
+#gym_link_image
+{
+    object-fit: cover;
+    transition: transform 0.2s;
+    cursor:pointer;
+    transition: all .3s linear;         
+}
+.to_zoom_gym:hover
+{
+    transform: scale(1.5);
+}
+#academy
+{
+    background-color:white;
+    position:relative;
+    overflow:hidden;
+    width: 50%;
+    height: 95%;
+}
+#academy_page_link
+{
+    position:absolute;
+    z-index:9;
+    left:30%;
+    font-family: 'KoHo', sans-serif;
+    top:50%;
+    opacity:0;
+    text-decoration: none;
+    color:black;
+    transition: transform 0.3s;
+    font-size:50px;
+    animation: website_links ease-in-out 2s;
+    animation-delay: 2s;    
+    animation-fill-mode: forwards;
+}
+#academy_link_image
+{
+    object-fit: cover;
+    opacity:0.2;
+    transition: all .3s linear;
+    cursor:pointer;
+    transition: transform 0.2s;
+}
+.to_zoom_academy:hover{
+    transform: scale(1.5);
+}
+#content
+{
+    height: 100%;
 /*                overflow:hidden;*/
-            }
-            #academy_page_link{
-                position:absolute;
-                z-index:9;
-                left:30%;
-                font-family: 'KoHo', sans-serif;
-                top:50%;
-                opacity:0;
-                text-decoration: none;
-                color:black;
-                font-size:50px;
-                animation: website_links ease-in-out 2s;
-                animation-delay: 6s;    
-                animation-fill-mode: forwards;
-            }
-            #academy_link_image{
-                object-fit: cover;
-                opacity:0.2;
-                transition: all .3s linear;
-                cursor:pointer;
-            }
-            #content{
-                height: 100%;
-/*                overflow:hidden;*/
-            }
-            #diss_msg{
-                text-align: center;
-                opacity: 0;
-                position:absolute;
-                top: 1%;
-                left: 45%;
-                animation: gymName1 ease-in-out 5s;
-                z-index: 10;
-                color:grey;
-               font-family: 'Roboto Slab', serif;
-            }
-            #welcome_message{
-                overflow-x:hidden;
-                left: 32%;
-                opacity:0;
-                position:absolute;
-                font-size: 20px;
-                z-index: 10;
-                display:inline;
-                animation: gymName ease-in-out 2s;
-                animation-delay:3s;
-                animation-fill-mode: forwards;
-                color:grey;
-                transition: all 0.4 linear;
-               font-family: 'Roboto Slab', serif;
-            }
+}
+#diss_msg
+{
+    text-align: center;
+    opacity: 0;
+    position:absolute;
+    top: 1%;
+    left: 45%;
+    animation: gymName1 ease-in-out 3s;
+    z-index: 10;
+    color:grey;
+    font-family: 'Roboto Slab', serif;
+}
+#welcome_message
+{
+    overflow-x:hidden;
+    left: 32%;
+    opacity:0;
+    position:absolute;
+    font-size: 20px;
+    z-index: 10;
+    display:inline;
+    animation: gymName ease-in-out 2s;
+    animation-delay:1s;
+    animation-fill-mode: forwards;
+    color:grey;
+    transition: all 0.4 linear;
+    font-family: 'Roboto Slab', serif;
+}
             
-            @keyframes website_links{
-                from{ opacity:0; }
-                to{ opacity:1;  }
-            }
-            @keyframes gymName{
-                from{opacity:0; top:25%;}
-                to{opacity:1; top:20%;}
-            }
-            @keyframes gymName1{
-                from{opacity:0; top:8%;}
-                to{opacity:1; top:3%;}
-            }
+@keyframes website_links
+{
+    from{ opacity:0; }
+    to{ opacity:1;  }
+}
+@keyframes gymName
+{
+    from{opacity:0; top:25%;}
+    to{opacity:1; top:20%;}
+}
+@keyframes gymName1
+{
+    from{opacity:0; top:8%;}
+    to{opacity:1; top:3%;}
+}
         
