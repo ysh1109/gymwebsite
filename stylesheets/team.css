@@ -1,137 +1,124 @@
-  *{
-            margin:0px;
-            padding: 0px;
-            font-family: 'PT Sans', sans-serif;            
-        }
-        
-            #header{
-               
-        
-                background-image: url("https://wallpapercave.com/wp/Ak1KOOT.jpg");
-                background-repeat: no-repeat;
-            background-size: cover;
-                opacity: ;
-            }
-        #logo {
-            position: relative;
-            width:30%;
-            height: 200px;
-            opacity: 0.3;
-            padding-top: 0px;
-            
-        }   
+*{
+    margin:0px;
+    padding: 0px;    
+}
+#header
+{
+    position:relative;
+    background-image: url("https://images.template.net/wp-content/uploads/2015/04/Patterns-Black-Textures-Grunge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo
+{
+    display:inline-block;
+    position: relative;
+    width: 20%;
+    height:150px;
+    text-align: center;
+}   
+#br_nme{
+    position: absolute;
+    width: 260px;
+    z-index: 11;
+    top: 70%;
+    left: 5%;
+}
+#logo h2{
+    color:red;
+    font-family: 'Bree Serif', serif;
+}
+#logo img{
+    margin-top: 20px;
+}
+#rgt_info{
+    width: 20%;
+    margin-right: 20px;
+    display:inline-block;
+    float:right;
+    margin-top: 20px;
+}
 
-        #info{
-            width: 22%;
-            height: 5%;
-            margin-right: 2%;
-            float: right;
-            position: relative;
-            top:-180px;
-            border: 2px solid;
-             border-right:black;
-             border-left:black;
-            border-bottom-color: orange;
-            font-size: 20px;
-            font-weight:bold; 
-            color:orange;
-            
-        }
-        #infolist {
-            list-style-type: none;
-            padding: 3px;
-        }
-        #address {
-            width: 22%;
-            height: 2%;
-            margin-right: -25%; ;
-            float: right;
-            font-size: 20px;
-            position: relative;
-            top:-70px;
-            margin-top: 20px;     
-            
-        }
-        #address a {
-            color: orange;
-            text-decoration: none;
-        }
-        #logo img {
-        object-fit: cover;
-    }
-        .menu{
-            position: relative;
-            top:-70px;
-            height:100px;
-            margin-left: 22%;
-            margin-right: 25%;
-            background-image: linear-gradient(to right, white, white);
-            
-            border-radius:10px;
-            border: 2px solid black;
-        }
-     
+#info
+{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-bottom-color: orange;
+    font-size: 20px;
+    font-weight:bold; 
+     color:orange;        
+}
+#infolist
+{
+    list-style-type: none;
+    padding: 3px;
+}
+#address
+{
+    font-size: 20px;   
+    margin-top: 20px;
+}
+#address a
+{
+    color: orange;
+    text-decoration: none;
+}
+.menu
+{
+    background-color: rgba(255,255,255);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 17%;
+    margin-left: 22%;           
+    border-radius:7px;
+    border: 2px solid black;
+    z-index: 21;
+}
+.rightmenu ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 30px 20px;
+    font-weight:bold; 
+    cursor:pointer;
+}
+.rightmenu li:hover 
+{
+    background:black; 
+    color: white;
+}
+.rightmenu ul li a{
+    color:black;
+    font-family: 'Source Sans Pro', sans-serif;
+}      
+ #poster 
+{
+    position: relative;
+    z-index: 10;
+    background-color: black;
+    height: 300px;
+    background-image: url("https://elevate.je/performance/wp-content/uploads/sites/3/2014/04/Elevate-Personal-Training-Jersey.png");
+}
+#poster a
+{
+    position: relative;
+    top:60%;
+    background:white;   
+    font-size: 30px;
+    font-weight: bold;
+}
        
-        .rightmenu{
-            margin-left: 10%;
-            
-/*            background-image: linear-gradient(to right, red , yellow);*/
-        }
-        
-        .rightmenu ul li {
-            display: inline-block;
-            font-size: 20px;
-            list-style: none;
-            line-height: 100px;
-            margin-left: 0px;
-            font-weight:bold; 
-           margin-right: 20px;
-           
-            
-              
-        }
-        .rightmenu ul {
-            margin-right: 20px;
-        }
-        li:hover {
-            background:white; 
-            color: orange;
-        }       
-        #poster {
-            position: relative;
-            top:-110px;
-            background-color: black;
-            width: 100%;
-            height: 300px;
-            background-image: url("https://elevate.je/performance/wp-content/uploads/sites/3/2014/04/Elevate-Personal-Training-Jersey.png");
-               
-        }
-        #poster a {
-            position: relative;
-            top:60%;
-            background:white;
-            padding: 1%;
-            left: 15%;
-            font-size: 30px;
-            font-weight: bold;
-        }
-       
-        #mem1 {
-                 border-bottom: 2px solid black;
-            
-            margin-left:5px;
-             margin-right:5px;
-            height: 800px;
-            position:relative;
-            background: white;
-            top:-60px;
-            background-image:url("");
-            background-position:center ;
-
-            }
+#mem1
+{
+    border-bottom: 2px solid black;
+    margin-left:5px;
+    margin-right:5px;
+    position:relative;
+    background: white;
+    background-image:url("");
+    background-position:center ;
+}
 #underline {
     position: relative;
-    top: -13%;
     left:20%;
     width: 70%;
     height: 10px;
@@ -144,29 +131,27 @@
     font-weight:bolder; 
     background-color: none;
     position: relative;
-    top:-500px;
     left:25%; 
 }
 
-        .mem_content  {
-            position: relative;
-            left: 25%;
-            width: 70%;
-            text-align: justify;
-            top:-100px;
-             color:black;
-            text-shadow: 0.5px blue;
-             font-size:22px;
-       
-            
-        }
+.mem_content
+{
+    position: relative;
+    left: 25%;
+    width: 70%;
+    text-align: justify;
+    color:black;
+    text-shadow: 0.5px blue;
+    font-size:22px;        
+}
          
-        #block {
-            position: relative;
-            width:10%;
-            height: 100%;
-            top:0%;
-            border: 1px solid black;
-            background: red;
-            z-index: 20;
-        }   
+#block
+{
+    position: relative;
+    width:10%;
+    height: 100%;
+    border: 1px solid black;
+    background: red;
+    opacity: .6;
+    z-index:40;
+}   
