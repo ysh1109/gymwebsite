@@ -100,7 +100,6 @@
         #poster {
             position: relative;
             top:-110px;
-            z-index: -10;
             background-color: black;
             width: 100%;
             height: 300px;
@@ -161,8 +160,13 @@
        
             
         }
-        .mem_content a  {
-             
-                 
-            
-        }
+         
+        #block {
+            position: relative;
+            width:10%;
+            height: 100%;
+            top:0%;
+            border: 1px solid black;
+            background: red;
+            z-index: 20;
+        }   
