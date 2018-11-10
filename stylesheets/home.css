@@ -105,10 +105,9 @@
 }
 #trans
 {
-    background: white;
-    color:black;
+    background: linear-gradient(to right, black, grey);
+    color:white;
     border: 2px solid black;
-    
     text-align: center;
     font-family: 'PT Serif', serif;
 }
@@ -155,6 +154,7 @@
 .img_lnk{
     position:absolute;
     top: 50%;
+    left: 5%;
     color:white;
     font-family: bold;
     text-align: center;
@@ -210,4 +210,14 @@
 .slideshow_navigation:hover{
     background: url("/res/images/dot_active.png");
     z-index: 20;
+}
+#mem_img_icn{
+    border-radius: 50%;
+}
+.gym_review{
+    width: 570px;
+    overflow:auto;
+}
+#mem_info div{
+    display:inline-block;
 }
