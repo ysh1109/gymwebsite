@@ -132,7 +132,7 @@
     width: 90%;
     margin-left: 5%;
     display:flex;
-    flex-wrap:wrap;
+/*    flex-wrap:wrap;*/
     position:relative;
 }
 #services{
@@ -212,12 +212,41 @@
     z-index: 20;
 }
 #mem_img_icn{
-    border-radius: 50%;
+    border-radius: 40%;
 }
 .gym_review{
-    width: 570px;
-    overflow:auto;
 }
 #mem_info div{
     display:inline-block;
+}
+@media only screen and (max-width : 600px)
+{
+    #header{
+        height:310px
+    }
+    #logo{
+        text-align:center;
+        width: 100%;
+        display:block;
+    }
+    #rgt_info{
+        float:none;
+        position:relative;
+        display:block;
+        width: 100%;
+        text-align:center;
+    }
+    .menu{
+        position:relative;
+        width: 99%;
+        margin-left: 0;
+        height:auto;
+
+    }
+    .menu ul li {
+        display:block;
+    }
+    #services_flex, #review_flex{
+        flex-wrap: wrap;
+    }
 }
