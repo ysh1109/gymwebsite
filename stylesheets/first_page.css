@@ -90,6 +90,7 @@
     top: 1%;
     left: 45%;
     animation: gymName1 ease-in-out 3s;
+    animation-fill-mode:backwards;
     z-index: 10;
     color:grey;
     font-family: 'Roboto Slab', serif;

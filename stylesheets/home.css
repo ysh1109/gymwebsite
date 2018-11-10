@@ -143,7 +143,8 @@
     cursor:pointer;
 }
 .srvcs_flx_img:hover{
-    filter:none;
+   animation: non_blur ease-in-out 0.3s;
+    animation-fill-mode:forwards;
 }
 .services_flex_cl{
     margin: 20px;
@@ -219,6 +220,14 @@
 #mem_info div{
     display:inline-block;
 }
+@keyframes non_blur{
+    from{
+        filter:blur(5px);
+    }
+    to{
+        filter:none;
+    }
+}
 @media only screen and (max-width : 600px)
 {
     #header{
@@ -249,4 +258,24 @@
     #services_flex, #review_flex{
         flex-wrap: wrap;
     }
+}
+footer{
+    background-color: black;
+    opacity: 0.9;
+    color:white;
+    text-align:center;
+}
+footer ul li{
+    margin: 0px 10px;
+    list-style: none;
+    display:inline-block;
+}
+#instagram_link img{
+    border-radius: 50%;
+}
+#google_plus_link img{
+    border-radius:50%;
+}
+#facebook_link img{
+    border-radius: 50%;
 }
