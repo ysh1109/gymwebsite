@@ -88,7 +88,14 @@
 }
 .rightmenu ul li a{
     color:black;
-    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+/*    font-family: 'Source Sans Pro', sans-serif;*/
+}
+.rightmenu ul li a:hover{
+    color:white;
+}
+.rgt_mnu_li:hover .fa{
+    color:white;
 }
 #container
 {
@@ -121,39 +128,48 @@
     filter: blur(5px);
     z-index: 9;
 }
-#services_flex, #tranformation_flex, #review_flex{
+#services_flex, #review_flex{
     z-index: 11;
     width: 90%;
     margin-left: 5%;
-    flex-wrap: wrap;
     display:flex;
+    flex-wrap:wrap;
     position:relative;
+}
+#services{
+    background:url("https://st3.depositphotos.com/1177973/13711/i/1600/depositphotos_137116848-stock-photo-gym-interior-with-equipment-blurred.jpg");
+}
+.services_flex_cl div{
+    border: 2px solid black;
+    cursor:pointer;
+}
+.srvcs_flx_img:hover{
+    filter:none;
 }
 .services_flex_cl{
     margin: 20px;
 }
-#pkgbox
-{
-    width:90%;
-    height:1000px;
-    margin-left: 5%;   
-}
-#pkg1 
-{
-    position: relative;
-    width: 25%;
-    height: 40%;
-    background: orange;
-    left: 3%;
-    top:5%;    
+.srvcs_flx_img{
+    filter:blur(5px);
 }
 .img_lnk{
     position:absolute;
-    top: 20px;
+    top: 50%;
+    color:white;
+    font-family: bold;
+    text-align: center;
     text-decoration: none;
     font-size: 30px;
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
+}
+#tranformation_flex{
+    width: 99%;
+    display:inline-flex;
+    overflow-x: scroll;
+}
+.transformations_flex_cl{
+    margin: 0px 20px;
 }
 #text1
 {
