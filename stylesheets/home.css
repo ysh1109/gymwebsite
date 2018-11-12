@@ -5,9 +5,10 @@
 #header
 {
     position:relative;
-    background-image: url("https://images.template.net/wp-content/uploads/2015/04/Patterns-Black-Textures-Grunge.jpg");
+    background-image: url("https://i2.wp.com/campcedarbrook.org/wp-content/uploads/2016/01/middle-black-to-black-gradient.png?fit=1920%2C820&ssl=1");
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 2px solid white;
 }
 #logo
 {
@@ -21,15 +22,15 @@
     position: absolute;
     width: 260px;
     z-index: 11;
-    top: 70%;
+    top: 65%;
     left: 5%;
 }
 #logo h2{
-    color:red;
+    color: #ff3333;
     font-family: 'Bree Serif', serif;
 }
 #logo img{
-    margin-top: 20px;
+    margin-top: 12px;
 }
 #rgt_info{
     width: 20%;
@@ -55,8 +56,13 @@
 }
 #address
 {
+<<<<<<< HEAD
     font-size: 20px;
     margin-top: 20px;
+=======
+    font-size: 20px;   
+    margin-top: 5px;
+>>>>>>> 20f9b09560bd6cdfb6c3aff15dc0357b7f0de210
 }
 #address a
 {
@@ -68,8 +74,13 @@
     background-color: rgba(255,255,255);
     backface-visibility: hidden;
     position: absolute;
+<<<<<<< HEAD
     top: 17%;
     left: 14%;
+=======
+    top: 21%;
+    margin-left: 14%;           
+>>>>>>> 20f9b09560bd6cdfb6c3aff15dc0357b7f0de210
     border-radius:7px;
     border: 2px solid black;
     z-index: 30;
