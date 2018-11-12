@@ -5,7 +5,7 @@
         </title>
         <link rel="stylesheet" type="text/css" href="stylesheets/academy.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-        
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     </head>
@@ -18,10 +18,10 @@
             <ul id="navbar_links">
                 <li><a href="#" id="home" class="nav_link">HOME</a></li>
                 <li><a href="#" id="brand_sandeep" class="nav_link">BRAND SANDEEP</a></li>
-                <li><a href="#" id="courses" class="nav_link">COURSES</a></li>
-                <li><a href="#" id="team" class="nav_link">TEAM</a></li>
+                <li><a href="#" id="courses" class="nav_link">PACKAGES</a></li>
+                <li><a href="#" id="team" class="nav_link">WORKS</a></li>
                 <li><a href="#" id="contact" class="nav_link">CONTACT</a></li>
-                </ul>    
+                </ul>
         </nav>
         </div>
         <div id="content">
@@ -31,15 +31,15 @@
             </div>
             <div id="img_2" class="inactive slide_show_img">
                 <img class="slideshow_1_img" src="https://www.winsport.ca/images/951x300/10245_PTC%202%20Week%20Trial_WebBanner_951x400.jpg" width="80%" height="500px">
-                
+
             </div>
             <div id="img_3" class="inactive slide_show_img">
                 <img class="slideshow_1_img" src="http://yycfitexpo.ca/wp-content/uploads/2016/02/Kickboxing-Class_Woman-Web.jpg" width="80%" height="500px">
-                
+
             </div>
             <div id="img_4" class="inactive slide_show_img">
                 <img class="slideshow_1_img" src="https://nationalpti.edu/wp-content/uploads/2018/05/NationalPTI-of-Arizona-Website.png" width="80%" height="500px">
-                
+
             </div>
             <div id="slide_show_navigation_dots">
                 <ul id="ssnd">
@@ -53,7 +53,7 @@
         </div>
         <footer>
             <div id="footer_content">
-                
+
             </div>
         </footer>
     </body>
@@ -108,16 +108,16 @@
                 console.log("i after completion is "+i);
                 console.log(ss);
                 ss = setTimeout(slide_show, 3000, 1, document.getElementById("img_4"), document.getElementById("slide_4"));
-            }   
+            }
         }
         setTimeout(slide_show(1, document.getElementById("img_1"), document.getElementById("slide_1")), 2000);
         function click_change_slide(num)
-        {   
+        {
                 //var all_slides = document.getElementsByClassName("slide_show_img");
                 clearTimeout(ss);
                     transition(num, document.getElementById("img_"+active_slide), document.getElementById("slide_"+active_slide));
                 ss=setTimeout(slide_show, 3000, num%4+1, document.getElementById("img_"+num), document.getElementById("slide_"+num));
         }
     </script>
-    
+
 </html>

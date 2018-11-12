@@ -1,6 +1,6 @@
 *{
     margin:0px;
-    padding: 0px;    
+    padding: 0px;
 }
 #header
 {
@@ -16,7 +16,7 @@
     width: 20%;
     height:150px;
     text-align: center;
-}   
+}
 #br_nme{
     position: absolute;
     width: 260px;
@@ -45,8 +45,8 @@
     border-bottom: 2px solid;
     border-bottom-color: orange;
     font-size: 20px;
-    font-weight:bold; 
-     color:orange;        
+    font-weight:bold;
+     color:orange;
 }
 #infolist
 {
@@ -55,7 +55,7 @@
 }
 #address
 {
-    font-size: 20px;   
+    font-size: 20px;
     margin-top: 20px;
 }
 #address a
@@ -69,38 +69,42 @@
     backface-visibility: hidden;
     position: absolute;
     top: 17%;
-    margin-left: 22%;           
+    left: 14%;
     border-radius:7px;
     border: 2px solid black;
-    z-index: 10;
+    z-index: 30;
+    opacity: 0.5;
+}
+.menu:hover{
+  opacity: 1;
 }
 .rightmenu ul li {
     display: inline-block;
     font-size: 20px;
     padding: 30px 20px;
-    font-weight:bold; 
+    font-weight:bold;
     cursor:pointer;
 }
-.rightmenu li:hover 
+.rightmenu li:hover
 {
-    background:black; 
+    background:black;
     color: white;
 }
 .rightmenu ul li a{
     color:black;
     text-decoration: none;
-/*    font-family: 'Source Sans Pro', sans-serif;*/
+   font-family: 'Source Sans Pro', sans-serif;
 }
 .rightmenu ul li a:hover{
     color:white;
 }
-.rgt_mnu_li:hover .fa{
+.rgt_mnu_li:hover .ic{
     color:white;
 }
 #container
 {
     position: relative;
-    margin-top:; 
+    margin-top:;
     overflow: hidden;
 }
 #trans
@@ -177,7 +181,7 @@
     color: red;
     position: relative;
     top:-10%;
-    font-size: 20px;    
+    font-size: 20px;
 }
 .flex_col_div{
     position:relative;

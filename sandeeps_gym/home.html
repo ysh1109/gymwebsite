@@ -9,16 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="stylesheets/home.css" type="text/css" rel="stylesheet">
 </head>
-    
+
     <body>
         <div class="bgimage">
             <div id="header">
                 <div id = "logo">
                     <img src = "res/images/c.PNG" height="80px">
                     <div id="br_nme"><h2>Sandeep's Fitness World</h2></div>
-                </div> 
+                </div>
                 <div id="rgt_info">
-                  
+
                     <div id="info">
                         <ul id="infolist">
                             <li id = "firstli" ><i class = "fa fa-phone"></i> +91-922266565</li>
@@ -35,13 +35,14 @@
             <nav class="menu">
                 <div  class="rightmenu" >
                     	<ul id="list">
-                        <li id = "firstli" class="rgt_mnu_li"><a href="#" class="fa fa-home"> HOME</a></li>
-                    	<li id = "secondli" class="rgt_mnu_li"><a href="#" class="fa fa-users"> SERVICES</a></li>
-                    	<li id = "thirdli" class="rgt_mnu_li"><a href="#" class="fa fa-briefcase"> PACKAGES</a></li>
-                    	<li id = "fouthli" class="rgt_mnu_li"><a href="#" class="fa fa-book"> WORKS</a></li>
-                        <li id = "fifthli" class="rgt_mnu_li"><a href="#" class="fa fa-address-card-o"> ABOUT US</a></li>
+                        <li id = "firstli" class="rgt_mnu_li"><span class="fa fa-home"></span><a href="home.html" class="ic"> HOME</a></li>
+                    	  <li id = "secondli" class="rgt_mnu_li"><span class="fa fa-building"></span><a href="#" class="ic"> BRAND SANDEEP</a></li>
+                    	  <li id = "thirdli" class="rgt_mnu_li"><span class="fa fa-briefcase"></span><a href="#" class="ic"> SERVICES</a></li>
+                    	  <li id = "fouthli" class="rgt_mnu_li"><span class="fa fa-group"></span><a href="mem1.html" class="ic"> TEAM</a></li>
+                        <li id = "fifthli" class="rgt_mnu_li"><span class="fa fa-camera"></span><a href="#" class="ic">GALLERY</a></li>
+                        <li id = "fifthli" class="rgt_mnu_li"><span class="fa fa-address-card"></span><a href="#" class="ic">CONTACT</a></li>
                    	 </ul>
-		      </div>			
+		      </div>
             </nav>
         <div id = "container">
              <div id="slideshow" class="ss">
@@ -51,7 +52,7 @@
                 <div id="img_2" class="inactive slide_show_img">
                     <img class="slideshow_1_img" src="https://www.winsport.ca/images/951x300/10245_PTC%202%20Week%20Trial_WebBanner_951x400.jpg" width="100%" height="400px">
 
-                </div>  
+                </div>
                 <div id="img_3" class="inactive slide_show_img">
                     <img class="slideshow_1_img" src="http://yycfitexpo.ca/wp-content/uploads/2016/02/Kickboxing-Class_Woman-Web.jpg" width="100%" height="400px">
 
@@ -75,7 +76,7 @@
             <div id = "trans">
                 <h2>SERVICES</h2>
             </div>
-            
+
             <div id="services_flex">
                 <div id="col_1" class="services_flex_cl">
                     <div id="col_1_img_1" class="flex_col_div">
@@ -86,7 +87,7 @@
                         <img src="https://images-na.ssl-images-amazon.com/images/I/614etjLsa8L._SX425_.jpg" width="360px" class="srvcs_flx_img">
                         <a href="#" class="img_lnk">AEROBICS</a>
                     </div>
-                    
+
                 </div>
                 <div id="col_2" class="services_flex_cl">
                     <div id="col_2_img_2" class="flex_col_div">
@@ -142,7 +143,7 @@
                     </div>
                 </div>
             </div>
-     
+
         </div>
         <div id="member_reviews">
             <div id = "trans">
@@ -163,10 +164,10 @@
                                     <i class="fa fa-star-o"></i>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div id="mem_rvw" style=" margin-top: 1%; text-align: justify;">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 
                             </p>
                         </div>
@@ -187,10 +188,10 @@
                                     <i class="fa fa-star-half-o"></i>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div id="mem_rvw" style=" margin-top: 1%; text-align: justify;" >
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 
                             </p>
                         </div>
@@ -207,7 +208,7 @@
                 </ul>
             </div>
         </footer>
-    </body>    
+    </body>
 <script>
         var ss, active_slide=1;
         var slides = document.getElementsByClassName("slide_show_img");
@@ -255,11 +256,11 @@
             else
             {
                 ss = setTimeout(slide_show, 3000, 1, document.getElementById("img_4"), document.getElementById("slide_4"));
-            }   
+            }
         }
         setTimeout(slide_show(1, document.getElementById("img_1"), document.getElementById("slide_1")), 2000);
         function click_change_slide(num)
-        {   
+        {
                 //var all_slides = document.getElementsByClassName("slide_show_img");
                 clearTimeout(ss);
                     transition(num, document.getElementById("img_"+active_slide), document.getElementById("slide_"+active_slide));
