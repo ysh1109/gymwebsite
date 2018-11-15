@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/gallery.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|PT+Serif|Work+Sans|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body onload="pint_style()">
+<nav class="menu">
+  <!-- <div id="crnt_pge_nme">
+    <a href="gallery.html"><h2>Gallery</h2></a>
+  </div> -->
+    <div  class="rightmenu" >
+          <ul id="navbar_links">
+            <li id = "firstli" class="rgt_mnu_li"><span class="fa fa-home nav_link"></span><a href="home.html" class="nav_link"> HOME</a></li>
+            <li id = "secondli" class="rgt_mnu_li"><span class="fa fa-building nav_link"></span><a href="#" class="nav_link"> BRAND SANDEEP</a></li>
+            <li id = "thirdli" class="rgt_mnu_li"><span class="fa fa-briefcase nav_link"></span><a href="#" class="nav_link"> SERVICES</a></li>
+            <li id = "fouthli" class="rgt_mnu_li"><span class="fa fa-group nav_link"></span><a href="mem1.html" class="nav_link"> TEAM</a></li>
+            <li id = "fifthli" class="rgt_mnu_li"><span class="fa fa-camera nav_link"></span><a href="gallery.html" class="nav_link"> GALLERY</a></li>
+            <li id = "fifthli" class="rgt_mnu_li"><span class="fa fa-address-card nav_link"></span><a href="#" class="nav_link"> CONTACT</a></li>
+         </ul>
+      </div>
+</nav>
+<div id="gallery-content">
+  <div id="gallery-images">
+    <div class="gallery_image">
+      <div><img src="http://b.static.trunity.net/files/299501_299600/299598/vertical-farming-chris-jacobs.jpg" ></div>
+      <!-- <div>OYOYOOYO<br>AAAAA</div> -->
+    </div>
+    <div class="gallery_image">
+      <div><img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" ></div>
+
+    </div>
+
+    <div class="gallery_image">
+      <img src="http://4.bp.blogspot.com/-oxlezteeOII/TfiTImj4RlI/AAAAAAAAA1k/UAgctmU5VZo/s1600/Widescreen+Unique+And+Beautiful+Photography+%25284%2529.jpg" width="300px">
+    </div>
+    <div class="gallery_image">
+      <img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" >
+    </div>
+    <div class="gallery_image">
+      <img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" >
+    </div>
+    <div class="gallery_image">
+      <img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" >
+    </div>
+    <div class="gallery_image">
+      <img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" >
+    </div>
+  </div>
+</div>
+<footer>
+    <div id="social_media_handles">
+        <ul id="social_links_list">
+            <li id="google_plus_link"><img src="https://i2.wp.com/onedollargraphics.market/wp-content/uploads/2018/02/google-plus-icon.jpg?fit=500%2C500" alt="Avatar" width="50px"></li>
+            <li id="facebook_link"><img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-icon-white-logo-png-transparent.png" alt="Avatar" width="50px"></li>
+            <li id="instagram_link"><img src="http://icons-for-free.com/free-icons/png/512/1620013.png" alt="Avatar" width="50px"></li>
+        </ul>
+    </div>
+</footer>
+</body>
+<script>
+function pint_style()
+{  var n_c = 5  ;
+  var g_i = document.getElementsByClassName("gallery_image");var max=0; var ind=0;
+  for(var i=0; i<n_c; i++)
+  {
+    if(g_i[i].offsetTop>max){ind=i; max=g_i[i].offsetTop;}
+  }
+  for(var i=0; i<n_c; i++)
+  {
+    console.log("max = "+max+", g_i["+i+"].offsetTop = "+g_i[i].offsetTop);
+    if(ind!=i)
+      g_i[i].style.top = (max-g_i[i].offsetTop)+"px";
+    else
+      g_i[i].style.top = (max-g_i[i].offsetTop)+"px";
+
+  }
+  for(var i=n_c; i<g_i.length; i++)
+  {
+      // console.log("g_i["+i+"].offsetTop = "+g_i[i].offsetTop+", g_i["+(i-n_c)+"].clientHeight = "+ g_i[i-n_c].clientHeight);
+      g_i[i].style.top = (-g_i[i].offsetTop+(g_i[i-n_c].clientHeight+g_i[i-n_c].offsetTop)+10)+"px";
+  }
+}
+</script>
+</html>
