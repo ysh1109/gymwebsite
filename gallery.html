@@ -29,15 +29,15 @@
       <!-- <div>OYOYOOYO<br>AAAAA</div> -->
     </div>
     <div class="gallery_image">
-      <div><img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" ></div>
+      <div><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/F-15_vertical_deploy.jpg" ></div>
 
     </div>
 
     <div class="gallery_image">
-      <img src="http://4.bp.blogspot.com/-oxlezteeOII/TfiTImj4RlI/AAAAAAAAA1k/UAgctmU5VZo/s1600/Widescreen+Unique+And+Beautiful+Photography+%25284%2529.jpg" width="300px">
+      <img src="http://www.philanthromedia.org/archives/verticalfarm1.jpg" width="300px">
     </div>
     <div class="gallery_image">
-      <img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" >
+      <img src="https://mobirise.com/bootstrap-carousel/assets2/images/thomas-smith-399133-1707x2560.jpg" >
     </div>
     <div class="gallery_image">
       <img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" >
@@ -63,6 +63,7 @@
 <script>
 function pint_style()
 {  var n_c = 5  ;
+  var g_c = document.getElementById("gallery-content");
   var g_i = document.getElementsByClassName("gallery_image");var max=0; var ind=0;
   for(var i=0; i<n_c; i++)
   {
@@ -71,10 +72,11 @@ function pint_style()
   for(var i=0; i<n_c; i++)
   {
     console.log("max = "+max+", g_i["+i+"].offsetTop = "+g_i[i].offsetTop);
-    if(ind!=i)
-      g_i[i].style.top = (max-g_i[i].offsetTop)+"px";
-    else
-      g_i[i].style.top = (max-g_i[i].offsetTop)+"px";
+    // if(ind!=i)
+      g_i[i].style.top = (max-g_i[i].offsetTop-g_c.offsetTop*2.4)+"px";
+      // g_i[i].style.top-=g_c.offsetTop+20+"px";
+    // else
+    //   g_i[i].style.top = (max-g_i[i].offsetTop)+"px";
 
   }
   for(var i=n_c; i<g_i.length; i++)
