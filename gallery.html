@@ -62,7 +62,7 @@
 </body>
 <script>
 function pint_style()
-{  var n_c = 5  ;
+{  var n_c = 4  ;
   var g_c = document.getElementById("gallery-content");
   var g_i = document.getElementsByClassName("gallery_image");var max=0; var ind=0;
   for(var i=0; i<n_c; i++)
@@ -73,7 +73,7 @@ function pint_style()
   {
     console.log("max = "+max+", g_i["+i+"].offsetTop = "+g_i[i].offsetTop);
     // if(ind!=i)
-      g_i[i].style.top = (max-g_i[i].offsetTop-g_c.offsetTop*2.4)+"px";
+      g_i[i].style.top = (max-g_i[i].offsetTop-g_c.offsetTop*1)+"px";
       // g_i[i].style.top-=g_c.offsetTop+20+"px";
     // else
     //   g_i[i].style.top = (max-g_i[i].offsetTop)+"px";
