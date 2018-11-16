@@ -5,7 +5,7 @@
         </title>
         <link rel="stylesheet" type="text/css" href="stylesheets/academy.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     </head>
@@ -15,13 +15,13 @@
                 <img src="https://cdn.shopifycloud.com/hatchful-web/assets/313d73fa42f04a46213abc6267b4d074.png"  width="130px">
             </div>
         <nav id="navbar">
-            <ul id="navbar_links">
-                <li><a href="#" id="home" class="nav_link">HOME</a></li>
-                <li><a href="#" id="brand_sandeep" class="nav_link">BRAND SANDEEP</a></li>
-                <li><a href="#" id="courses" class="nav_link">COURSES</a></li>
-                <li><a href="#" id="team" class="nav_link">TEAM</a></li>
-                <li><a href="#" id="contact" class="nav_link">CONTACT</a></li>
-            </ul>
+          <ul id="navbar_links">
+            <li id = "firstli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-home nav_link"></span><a href="academy.html" class="nav_link"> HOME</a></li>
+            <li id = "secondli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-building nav_link"></span><a href="#" class="nav_link"> BRAND SANDEEP</a></li>
+            <li id = "thirdli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-briefcase nav_link"></span><a href="courses.html" class="nav_link"> COURSES</a></li>
+            <li id = "fouthli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-group nav_link"></span><a href="mem1.html" class="nav_link"> TEAM</a></li>
+            <li id = "fifthli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-address-card nav_link"></span><a href="#" class="nav_link"> CONTACT</a></li>
+         </ul>
         </nav>
         </div>
         <div id="content">
@@ -117,6 +117,10 @@
                 clearTimeout(ss);
                     transition(num, document.getElementById("img_"+active_slide), document.getElementById("slide_"+active_slide));
                 ss=setTimeout(slide_show, 3000, num%4+1, document.getElementById("img_"+num), document.getElementById("slide_"+num));
+        }
+        function goto_link(e)
+        {
+          e.lastElementChild.click();
         }
     </script>
 

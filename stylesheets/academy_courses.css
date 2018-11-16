@@ -1,0 +1,40 @@
+#content{
+  background-color:white;
+
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#courses_list{
+  display:flex;
+  flex-wrap: wrap;
+}
+.crs_lst_cl{
+  width: 48%;
+  margin: 0px 10px;
+  /* background-color:green; */
+}
+.crs_lst_cl ul{
+  /* background-color: green; */
+  margin: 0;
+  padding: 0;
+}
+.crs_lst_cl li{
+  list-style:none;
+  padding: 20px;
+  /* background-color:red; */
+  position:relative;
+}
+.crs_lst_cl li span{
+  display:inline-block
+
+}
+.crs_nme{
+  bottom: 35%;
+  position:absolute;
+font-family: 'Josefin Sans', sans-serif;
+
+  font-size: 25px;
+  margin-left: 10px;
+}

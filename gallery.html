@@ -62,18 +62,23 @@
 </body>
 <script>
 function pint_style()
-{  var n_c = 4  ;
+{
+  var g_i = document.getElementsByClassName("gallery_image");
+  var n_c = parseInt(((window.innerWidth*0.8)/g_i[0].clientWidth)) ;
+  console.log("n_c = "+n_c);
   var g_c = document.getElementById("gallery-content");
-  var g_i = document.getElementsByClassName("gallery_image");var max=0; var ind=0;
+  var imax=0; var ind=0, imin=g_i[0].offsetTop;
   for(var i=0; i<n_c; i++)
   {
-    if(g_i[i].offsetTop>max){ind=i; max=g_i[i].offsetTop;}
+    if(g_i[i].offsetTop>imax){ind=i; imax=g_i[i].offsetTop;}
+    if(g_i[i].offsetTop<imin){imin=g_i[i].offsetTop;}
   }
+  console.log("imin/imax = "+imin/imax);
   for(var i=0; i<n_c; i++)
   {
-    console.log("max = "+max+", g_i["+i+"].offsetTop = "+g_i[i].offsetTop);
+    console.log("max = "+imax+", g_i["+i+"].offsetTop = "+g_i[i].offsetTop);
     // if(ind!=i)
-      g_i[i].style.top = (max-g_i[i].offsetTop-g_c.offsetTop*1)+"px";
+      g_i[i].style.top = (imax-g_i[i].offsetTop-g_c.offsetTop)+"px";
       // g_i[i].style.top-=g_c.offsetTop+20+"px";
     // else
     //   g_i[i].style.top = (max-g_i[i].offsetTop)+"px";

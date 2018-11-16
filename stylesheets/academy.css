@@ -14,7 +14,7 @@
     border-bottom: 2px solid grey;
 }
 nav{
-    
+
     opacity: 0.9;
     background: linear-gradient(to right, black, black);
     width: 80%;
@@ -26,7 +26,7 @@ nav{
     padding: 55px;
 }
 #navbar_links li{
-    cursor:pointer; 
+    cursor:pointer;
     display:inline;
     padding: 20px;
 }
@@ -34,6 +34,9 @@ nav{
     text-decoration:none;
     font-family: 'PT Sans', sans-serif;
     color:white;
+}
+#navbar_links li span{
+  color:white;
 }
 #navbar_links li:hover {
     background-color:white;
@@ -127,7 +130,7 @@ footer{
         text-align: center;
         padding: 15px;
     }
-    
+
     #content{
         position:relative;
         top: 12%;
