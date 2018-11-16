@@ -9,17 +9,32 @@
 }
 #logo
 {
+    opacity:0.5;
     display:inline-block;
-    position:absolute;
-    border-bottom: 2px solid grey;
+    position: relative;
+    width: 10%;
+    height:131px;
+    text-align: center;
+    cursor:pointer;
+    float:left;;
+}
+#logo:hover{
+  opacity:1;
+}
+#logo h2{
+    color:red;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}
+#logo img{
+    margin-top: 20px;
+    height: 60px;
 }
 nav{
-
     opacity: 0.9;
     background: linear-gradient(to right, black, black);
     width: 80%;
     display:inline-block;
-    margin-left: 10%;
 }
 #navbar_links{
     text-align: center;

@@ -11,11 +11,16 @@
 }
 #logo
 {
+    opacity: 0.5;
     display:inline-block;
     position: relative;
     width: 20%;
     height:150px;
     text-align: center;
+    cursor:pointer;
+}
+#logo:hover{
+  opacity: 1;
 }
 #br_nme{
     position: absolute;
@@ -68,7 +73,7 @@
     background-color: rgba(255,255,255);
     backface-visibility: hidden;
     position: absolute;
-    top: 17%;
+    top: 18%;
     left: 14%;
     border-radius:7px;
     border: 2px solid black;

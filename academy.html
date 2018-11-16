@@ -11,9 +11,10 @@
     </head>
     <body class="divs">
         <div id="top_bar">
-            <div id="logo">
-                <img src="https://cdn.shopifycloud.com/hatchful-web/assets/313d73fa42f04a46213abc6267b4d074.png"  width="130px">
-            </div>
+          <div id = "logo" onclick="to_index()">
+              <img src = "res/images/c.PNG">
+              <div id="br_nme"><h2>Sandeep's Fitness World</h2></div>
+          </div>
         <nav id="navbar">
           <ul id="navbar_links">
             <li id = "firstli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-home nav_link"></span><a href="academy.html" class="nav_link"> HOME</a></li>
@@ -121,6 +122,9 @@
         function goto_link(e)
         {
           e.lastElementChild.click();
+        }
+        function to_index(){
+          window.location.href="index.html";
         }
     </script>
 

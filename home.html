@@ -13,7 +13,7 @@
     <body>
         <div class="bgimage">
             <div id="header">
-                <div id = "logo">
+                <div id = "logo" onclick="to_index()">
                     <img src = "res/images/c.PNG" height="80px">
                     <div id="br_nme"><h2>Sandeep's Fitness World</h2></div>
                 </div>
@@ -36,7 +36,7 @@
                 <div  class="rightmenu" >
                     	<ul id="list">
                         <li id = "firstli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-home"></span><a href="home.html" class="ic">HOME</a></li>
-                    	  <li id = "secondli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-building"></span><a href="#" class="ic">BRAND SANDEEP</a></li>
+                    	  <li id = "secondli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-building"></span><a href="brand_sandeep.html" class="ic">BRAND SANDEEP</a></li>
                     	  <li id = "thirdli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-briefcase"></span><a href="#" class="ic">SERVICES</a></li>
                     	  <li id = "fouthli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-group"></span><a href="mem1.html" class="ic">TEAM</a></li>
                         <li id = "fifthli" class="rgt_mnu_li" onclick="goto_link(this)"><span class="fa fa-camera"></span><a href="gallery.html" class="ic">GALLERY</a></li>
@@ -270,6 +270,10 @@
         function goto_link(e)
         {
           e.lastElementChild.click();
+        }
+        function to_index()
+        {
+          window.location.href="index.html"
         }
     </script>
 </html>
