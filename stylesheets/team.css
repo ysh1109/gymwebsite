@@ -1,6 +1,6 @@
 *{
     margin:0px;
-    padding: 0px;    
+    padding: 0px;
 }
 #header
 {
@@ -16,7 +16,7 @@
     width: 20%;
     height:150px;
     text-align: center;
-}   
+}
 #br_nme{
     position: absolute;
     width: 260px;
@@ -45,8 +45,8 @@
     border-bottom: 2px solid;
     border-bottom-color: orange;
     font-size: 20px;
-    font-weight:bold; 
-     color:orange;        
+    font-weight:bold;
+     color:orange;
 }
 #infolist
 {
@@ -55,7 +55,7 @@
 }
 #address
 {
-    font-size: 20px;   
+    font-size: 20px;
     margin-top: 20px;
 }
 #address a
@@ -65,11 +65,7 @@
 }
 .menu
 {
-    background-color: rgba(255,255,255);
-    backface-visibility: hidden;
-    position: absolute;
-    top: 17%;
-    margin-left: 22%;           
+    background-color: black;
     border-radius:7px;
     border: 2px solid black;
     z-index: 21;
@@ -78,19 +74,19 @@
     display: inline-block;
     font-size: 20px;
     padding: 30px 20px;
-    font-weight:bold; 
+    font-weight:bold;
     cursor:pointer;
 }
-.rightmenu li:hover 
+.rightmenu li:hover
 {
-    background:black; 
+    background:black;
     color: white;
 }
 .rightmenu ul li a{
     color:black;
     font-family: 'Source Sans Pro', sans-serif;
-}      
- #poster 
+}
+ #poster
 {
     position: relative;
     z-index: 10;
@@ -102,11 +98,11 @@
 {
     position: relative;
     top:60%;
-    background:white;   
+    background:white;
     font-size: 30px;
     font-weight: bold;
 }
-       
+
 #mem1
 {
     border-bottom: 2px solid black;
@@ -125,13 +121,13 @@
     background-image:  linear-gradient(to right, orange , white)
 }
  #mem_name{
-    font-family: serif;  
+    font-family: serif;
     opacity: 0.9;
     font-size: 50px;
-    font-weight:bolder; 
+    font-weight:bolder;
     background-color: none;
     position: relative;
-    left:25%; 
+    left:25%;
 }
 
 .mem_content
@@ -142,9 +138,9 @@
     text-align: justify;
     color:black;
     text-shadow: 0.5px blue;
-    font-size:22px;        
+    font-size:22px;
 }
-         
+
 #block
 {
     position: relative;
@@ -154,4 +150,4 @@
     background: red;
     opacity: .6;
     z-index:40;
-}   
+}
