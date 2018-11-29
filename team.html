@@ -10,16 +10,16 @@
     <link href="stylesheets/home.css" type="text/css" rel="stylesheet">
     <link href="stylesheets/team.css" type="text/css" rel="stylesheet">
 </head>
-    
+
     <body>
         <div class="bgimage">
             <div id="header">
                 <div id = "logo">
                     <img src = "res/images/c.PNG" height="80px">
                     <div id="br_nme"><h2>Sandeep's Fitness World</h2></div>
-                </div> 
+                </div>
                 <div id="rgt_info">
-                  
+
                     <div id="info">
                         <ul id="infolist">
                             <li id = "firstli"><i class = "fa fa-home"></i>+91-922266565</li>
@@ -36,25 +36,22 @@
             <nav class="menu">
                 <div  class="rightmenu" >
                     	<ul id="list">
-                        <li id = "firstli"><a href="#" class = "fa fa-home"></a>HOME</li>
-                    	<li id = "secondli"><a href="#" class = "fa fa-home"></a>SERVICES</li>
-                    	<li id = "thirdli"><a href="#" class = "fa fa-phone"></a>ABOUT</li>
-                    	<li id = "fouthli"><a href="#" class = "fa fa-home"></a>PACKAGES</li>
-                        <li id = "fifthli"><a href="#" class = "fa fa-book"></a>WORKS</li>
+                        <li id = "firstli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="home.html" class="ic"><span class="fa fa-home"></span>HOME</a></li>
+                    	  <li id = "secondli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="brand_sandeep.html" class="ic"><span class="fa fa-building"></span>BRAND SANDEEP</a></li>
+                    	  <li id = "thirdli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="#" class="ic"><span class="fa fa-briefcase"></span>SERVICES</a></li>
+                    	  <li id = "fouthli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="team.html" class="ic"><span class="fa fa-group"></span>TEAM</a></li>
+                        <li id = "fifthli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="gallery.html" class="ic"><span class="fa fa-camera"></span>GALLERY</a></li>
+                        <li id = "fifthli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="#" class="ic"><span class="fa fa-address-card"></span>CONTACT</a></li>
                    	 </ul>
-		      </div>			
+		            </div>
             </nav>
-            
-            
-            
-            
             <div id="poster">
                 <div id="block">
                     <a style="z-index: 30" href="https://www.google.co.in/maps/dir/23.2333312,77.4324224/sandeep+fitness+ayodhya+nagar/@23.2546729,77.4205113,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x397c6a1e4d7678c7:0x84c98f9ad204e7ce!2m2!1d77.4745578!2d23.2769274">lets have fun</a>
                 </div>
-                <a>TEAM MEMBERS</a>
+                <!-- <a>TEAM MEMBERS</a> -->
             </div>
-            <div id ="container">
+            <!-- <div id ="container">
                 <div id="mem1">
                     <div id="mem1_img"><img src ="https://sevensportsservices.com/wp-content/uploads/2018/06/edc3e072615744f2ba7bcd9d56c27ba3.jpg" width="100%" height="600px"><a id="mem_name">SURYANSH GUPTA<br>PERSONAL TRAINER</a></div>
                     <div id="underline"></div>
@@ -63,7 +60,7 @@
                             plays an important role in brand building. He is a keen sports and fitness enthusiast. Youthful and dynamic, Sandeep is always
                             looking for newer opportunities.</p>
                 </div>
-            </div>    
+            </div>     -->
         </div>
         <script>
             var ti = document.getElementById("block");
@@ -71,6 +68,11 @@
                        window.location.href="mem1.html";
             }
             );
+
+            function to_index()
+            {
+              window.location.href="index.html"
+            }
         </script>
     </body>
 </html>
