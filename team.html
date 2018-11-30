@@ -14,7 +14,7 @@
     <body>
         <div class="bgimage">
             <div id="header">
-                <div id = "logo">
+                <div id = "logo" onclick="to_index()">
                     <img src = "res/images/c.PNG" height="80px">
                     <div id="br_nme"><h2>Sandeep's Fitness World</h2></div>
                 </div>
@@ -69,6 +69,10 @@
             }
             );
 
+                    function goto_link(e)
+                    {
+                      e.lastElementChild.click();
+                    }
             function to_index()
             {
               window.location.href="index.html"

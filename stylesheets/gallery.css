@@ -55,7 +55,6 @@ body{
     color:black;
 }
 #gallery-content{
-  /* height: 100%; */
     border-radius: 5px;
     opacity: 0.9;
     background: linear-gradient(to right, #eaf7ff, #ffffff, #ffeded);
