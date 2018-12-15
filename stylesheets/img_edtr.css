@@ -1,0 +1,73 @@
+#editor_btn{
+  position: absolute;
+  z-index: 100;
+  top: 20px;
+  right: 20px;
+  border:none;
+  background:white;
+  color:var(--editor_color); cursor:pointer;
+  font-size: 9px;
+  border-radius: 15px;
+  padding: 7px 7px;
+}
+#editor_btn:hover{
+  background-color:var(--editor_color);
+  color:white;
+}
+:root{
+  --editor_color:#256a90;
+}
+#editor_btn span{
+color:var(--editor_color); font-size: 15px;
+}
+#editor_btn:hover .fa{
+  color:white;
+}
+#editor{
+  position:absolute;
+  width:200px;margin:10px;
+   border-radius: 7px; border: 1px solid var(--editor_color);
+   top:0; right:0;
+   z-index: 100;
+   background-color:white;
+}
+#title_bar{
+  background-color:var(--editor_color);
+  padding: 10px;
+   border-radius: 7px 7px 0px 0px; color:white; text-align:center;
+}
+#upld_img{
+  border-radius:3px; width: 100%; font-size: 10px; color:black;
+}
+#chng{
+  border:none; border-radius:5px; background-color:var(--editor_color);
+color:white; display:inline-block; padding: 7px 10px; font-size: 10px;
+}
+#chg_div{
+  margin-top:10px;margin-bottom:10px
+}
+#ps_url{
+  border-radius:5px 5px 5px 5px; border:0.5px solid grey;width: 56%;padding: 10px 10px; font-size:10px;
+}
+#upld{
+  border:none; margin-left: 5px;padding: 10px 5px;
+  border-radius:5px 5px 5px 5px; font-size: 10px;
+  background-color:var(--editor_color);
+  color:white;
+}
+
+input[type=submit]{
+  cursor:pointer;
+}
+#editing_buttons div{
+  text-align:center;
+}
+#x_img_edtr{
+  float:right;
+  cursor:pointer;
+  font-size: 15px;
+  color:black;
+}
+#x_img_edtr:hover{
+  color:red;
+}

@@ -232,6 +232,10 @@
 #mem_info div{
     display:inline-block;
 }
+#hamburger_icon{
+  font-size: 35px;
+  display:none;
+}
 @keyframes non_blur{
     from{
         filter:blur(5px);
@@ -257,15 +261,19 @@
         width: 100%;
         text-align:center;
     }
+    #hamburger_icon{
+      display:block;
+    }
     .menu{
         position:relative;
         width: 99%;
+        left:0;
+        opacity:1;
         margin-left: 0;
         height:auto;
-
     }
     .menu ul li {
-        display:block;
+        display:none;
     }
     #services_flex, #review_flex{
         flex-wrap: wrap;

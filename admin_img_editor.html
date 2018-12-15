@@ -1,0 +1,15 @@
+<button id="editor_btn" style="border:none; background:none; cursor:pointer; font-size: 13px;" title="Edit This Image"><span class="fa fa-edit" style="color:var(--editor_color); font-size: 20px;"></span><span style="color:var(--editor_color); font-size: 20px">Edit</span></button>
+
+<script>
+function add_edit_btn()
+{
+  var x = document.getElementById("editor_btn");
+  var i_h = document.getElementsByTagName('img');
+  var p_i_h = [];
+  for(var i=0; i<i_h.length; i++)
+  {
+    p_i_h.push(i_h[i].parentElement);
+    p_i_h.appendChild(x);
+  }
+}
+</script>
