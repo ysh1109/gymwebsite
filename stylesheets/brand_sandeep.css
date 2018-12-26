@@ -1,0 +1,240 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#header
+{
+    position:relative;
+    background-image: url("https://images.template.net/wp-content/uploads/2015/04/Patterns-Black-Textures-Grunge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo
+{
+    opacity: 0.5;
+    display:inline-block;
+    position: relative;
+    width: 20%;
+    height:155px;
+    text-align: center;
+    cursor:pointer;
+}
+#logo:hover{
+  opacity: 1;
+}
+#br_nme{
+    position: absolute;
+    width: 260px;
+    z-index: 11;
+    top: 65%;
+    left: 5%;
+}
+#logo h2{
+    color:red;
+    font-family: 'Bree Serif', serif;
+}
+#logo img{
+    margin-top: 18px;
+}
+#rgt_info{
+    width: 20%;
+    margin-right: 20px;
+    display:inline-block;
+    float:right;
+    margin-top: 18px;
+}
+
+#info
+{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-bottom-color: orange;
+    font-size: 18px;
+    font-weight:bold;
+     color:orange;
+}
+#infolist
+{
+    list-style-type: none;
+    padding: 3px;
+}
+#address
+{
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: right;
+    float: left;
+}
+
+#address a
+{
+    color: orange;
+    text-decoration: none;
+    
+    
+}
+.menu
+{
+    background-color: rgba(255,255,255);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 23%;
+    left: 15%;
+    border-radius:7px;
+    border: 2px solid black;
+    z-index: 30;
+    
+}
+.fa{
+  margin-left: 5px;
+}
+.menu:hover{
+  opacity: 1;
+}
+.rightmenu ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 30px 20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.rightmenu li:hover
+{
+    background:black;
+    color: white;
+}
+.rightmenu ul li a{
+    color:black;
+    text-decoration: none;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+.rightmenu ul li a:hover{
+    color:white;
+}
+.rgt_mnu_li:hover .ic{
+    color:white;
+}
+#title_aboutus{
+    position: relative;
+    background-image: url("https://img.freepik.com/free-photo/fitness-hall-with-the-sport-bikes-in-it_9693-1244.jpg?size=338&ext=jpg");
+    
+    height: 150px;
+    
+}
+
+#abt{
+    position: relative;
+    top:55%;
+    margin-left: 15%;
+    
+}
+.about_sandeep{
+    background-color: orange;
+    font-size:30px;
+    color:white;
+    padding: px;
+}
+#container_1{
+    position: relative;
+    background-color: whitesmoke;
+    background-image: url("https://image.freepik.com/free-photo/exercise-weights-iron-dumbbell-with-extra-plates_1423-222.jpg");
+    margin-bottom: 10px;
+    z-index: -10;
+}
+
+#img{
+    position: relative;
+    
+    width: 35%;
+    height: 300px;
+    background: pink;
+}
+#text{
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    padding: 5px;
+    margin-top: 2%;
+    width:50%;
+    margin-left: 10%;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: white;
+}
+#about_us{
+    border-left: 5px solid orange;
+    padding-right: 2px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+    margin-right: 10px;
+}
+.details{
+    font-size: 20px;
+      letter-spacing: 1px;
+    padding: 2px;
+   
+}
+#container
+
+{
+    position: relative;
+    width: 25%;
+    height:400px;
+    float: right;
+    margin-right: 5%;
+    margin-top:15%;
+    border: 4px solid white;
+    
+}
+.inactive
+{
+    display:none;
+    animation: img_dspr ease-in-out 2s;
+    animation-fill-mode: forwards;
+}
+#ssnd {
+    position:absolute;
+    top: 360px;
+    margin:0px;
+    padding:0;
+    left: 46.5%;
+}
+#ssnd li{
+    z-index: 21;
+    display:inline;
+}
+.slideshow_navigation{
+    border:none;
+    width: 20px;
+    height: 20px;
+    background: url("/res/images/dot_inactive.png");
+    cursor:pointer;
+    margin-right: 5px;
+    z-index:22;
+}
+.slideshow_navigation:hover{
+    background: url("/res/images/dot_active.png");
+    z-index: 20;
+}
+footer{
+    background-color: black;
+    opacity: 0.9;
+    color:white;
+    text-align:center;
+    top:50%;
+    
+}
+footer ul li{
+    margin: 0px 10px;
+    list-style: none;
+    display:inline-block;
+}
+#instagram_link img{
+    border-radius: 50%;
+}
+#google_plus_link img{
+    border-radius:50%;
+}
+#facebook_link img{
+    border-radius: 50%;
+}
