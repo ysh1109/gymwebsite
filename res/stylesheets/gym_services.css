@@ -5,6 +5,7 @@
 }
 .srvc_img{
   float:right;
+  height: 500px;
   /* background-color:green; */
   text-align: center;
 }
