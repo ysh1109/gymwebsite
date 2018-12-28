@@ -3,19 +3,19 @@
     <head>
     <title>Welcome To Sandeep's Fitness World</title>
     <link href="https://fonts.googleapis.com/css?family=KoHo|Charmonman|Roboto+Slab " rel="stylesheet">
-    <link href="stylesheets/first_page.css" type="text/css" rel="stylesheet"> 
+    <link href="res/stylesheets/first_page.css" type="text/css" rel="stylesheet"> 
     </head>
-   
+
 <body>
     <div id="content">
-        
+
             <div id="diss_msg"><h1>Welcome <br> <span>To</span></h1></div>
         <div id="welcome_message">
             <h1>Sandeep's Fitness World!</h1>
         </div>
     <div id="Gym">
         <video autoplay muted loop id="gym_link_image" class = "to_zoom_gym" onclick="open_gym()"><source src="res/vids/v1.mp4" type="video/mp4"></video>
-        <a id="gym_page_link" class="to_zoom_gym g_l" href="home.html">Gym</a>  
+        <a id="gym_page_link" class="to_zoom_gym g_l" href="home.html">Gym</a>
     </div>
     <div id="academy">
         <video autoplay muted loop id="academy_link_image"  class = "to_zoom_academy" onclick="open_academy()"><source src="res/vids/v2.mp4"></video>
@@ -29,17 +29,17 @@
         l1.style.backgroundColor="black";var aa = document.getElementById("academy_page_link");
         function open_gym()
         {
-         ga.click();   
+         ga.click();
         }
         function open_academy()
         {
             aa.click();
         }
-        
+
         //page responsiveness
         if(window.outerWidth>600)
         {
-               
+
                  l1.style.float="left";
                 l2.style.marginLeft="50%";
                 l1.width=(window.innerWidth)*ss;
