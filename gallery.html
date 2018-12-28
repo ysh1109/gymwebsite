@@ -64,7 +64,7 @@
 function pint_style()
 {
   var g_i = document.getElementsByClassName("gallery_image");
-  var n_c = parseInt(((window.innerWidth*0.8)/g_i[0].clientWidth)) ;
+  var n_c = 5//parseInt(((window.outerWidth*0.8)/g_i[0].clientWidth)) ;
   console.log("n_c = "+n_c);
   var g_c = document.getElementById("gallery-content");
   var imax=0; var ind=0, imin=g_i[0].offsetTop;

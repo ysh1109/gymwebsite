@@ -1,0 +1,10 @@
+.srvc_blc{
+  display:inline-block;
+  width: 50%;
+
+}
+.srvc_img{
+  float:right;
+  /* background-color:green; */
+  text-align: center;
+}
