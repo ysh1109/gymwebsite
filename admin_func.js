@@ -29,7 +29,7 @@ function img_chng_dbx(div_id)
 {
     div_id.innerHTML= '<div id="editor"><div id="title_bar"><span><strong>Edit This Photo</strong></span><span id="x_img_edtr" class="fa fa-window-close-o" onclick="x_img_chng_dbx(this.parentElement.parentElement.parentElement)"></span></div><div id="editing_buttons" style="margin: 10px;"><div style="text-align:center;"><form method="post" action=""><div><input type="file" name="nw_img_fl" onchange="prv_img(this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement,this)" id="upld_img"></div><div id="chg_div"><input id="chng" type="submit" name="fl_ud" value="Change"></div></form></div><div><form method="post"><input type="text" id="ps_url" name="img" placeholder="Paste Url Here ...."><input id="upld" type="submit" name="img_url" value="Upload"></form></div></div></div>';
 }
-var f; var cc;
+// var f; var cc;
 function prv_img(kk, curr)
 {
   var rdr = new FileReader();
@@ -38,8 +38,8 @@ function prv_img(kk, curr)
     console.log("done");
   }
   rdr.readAsDataURL(curr.files[0]);
-  console.log("working");
-  f=kk;cc=curr;
-  console.log(kk);
-  console.log(curr);console.log(curr.file);
+  // console.log("working");
+  // f=kk;cc=curr;
+  // console.log(kk);
+  // console.log(curr);console.log(curr.file);
 }
