@@ -14,41 +14,7 @@
 
     <body>
         <div class="bgimage">
-            <div id="header">
-                <div id = "logo" onclick="to_index()">
-                    <img src = "res/images/c.PNG" height="80px">
-                    <div id="br_nme"><h2>Sandeep's Fitness World</h2></div>
-                </div>
-                <div id="rgt_info">
-
-                    <div id="info">
-                        <ul id="infolist">
-                            <li id = "firstli" ><span class = "fa fa-phone"></span>  +91-922266565</li>
-                            <li id = "secondli" ><span class = "fa fa-calendar"></span>  MON-SAT 6.00am-8.00 am</li>
-                            <li id = "thirdli"><span class = "fa fa-calendar-o"></span>  SUN 8.00am</li>
-                        </ul>
-                    </div>
-                    <div id="address">
-                      <ul id="adrs_lst">
-                        <li><a href ="https://bit.ly/2ES1pEY"><span class="fa fa-map-marker" style="color:orange"></span><strong>AYODHYA NAGAR, BHOPAL</strong></a></li>
-                        <li><a href ="https://bit.ly/2ES1pEY"><span class="fa fa-map-marker" style="color:orange"></span><strong>ANOTHER LOCATION</strong></a></li>
-                      </ul>
-                    </div>
-                </div>
-            </div>
-            <nav class="menu">
-                <div  class="rightmenu" >
-                    	<ul id="list">
-                        <li id = "hamburger_icon" onclick="rev_nav()" class="rgt_mnu_li" onclick="goto_link(this)"><span class="ic"><span class="fa fa-bars"></span></span></li>
-                        <li id = "firstli" class="rgt_mnu_li r_o_w" onclick="goto_link(this)"><a href="home.html" class="ic"><span class="fa fa-home"></span>HOME</a></li>
-                        <li id = "secondli" class="rgt_mnu_li r_o_w" onclick="goto_link(this)"><a href="brand_sandeep.html" class="ic"><span class="fa fa-building"></span>BRAND SANDEEP</a></li>
-                        <li id = "thirdli" class="rgt_mnu_li r_o_w" onclick="goto_link(this)"><a href="gymservices.html" class="ic"><span class="fa fa-briefcase"></span>SERVICES</a></li>
-                        <li id = "fouthli" class="rgt_mnu_li r_o_w" onclick="goto_link(this)"><a href="team.html" class="ic"><span class="fa fa-group"></span>TEAM</a></li>
-                        <li id = "fifthli" class="rgt_mnu_li r_o_w" onclick="goto_link(this)"><a href="gallery.html" class="ic"><span class="fa fa-camera"></span>GALLERY</a></li>
-                        <li id = "fifthli" class="rgt_mnu_li r_o_w" onclick="goto_link(this)"><a href="#" class="ic"><span class="fa fa-address-card"></span>CONTACT</a></li>
-                   	 </ul>
-		            </div>
-            </nav>
+            <div include-file="gym_header_page.html"></div>
         </div>
         <div id="services_content">
           <ul id="services_content_list">
@@ -130,15 +96,7 @@ When students don’t have a proper foundation, these questions don’t mean muc
             </li>
           </ul>
         </div>
-        <footer>
-            <div id="social_media_handles">
-                <ul id="social_links_list">
-                    <li id="google_plus_link"><img src="https://i2.wp.com/onedollargraphics.market/wp-content/uploads/2018/02/google-plus-icon.jpg?fit=500%2C500" alt="Avatar" width="50px"></li>
-                    <li id="facebook_link"><img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-icon-white-logo-png-transparent.png" alt="Avatar" width="50px"></li>
-                    <li id="instagram_link"><img src="http://icons-for-free.com/free-icons/png/512/1620013.png" alt="Avatar" width="50px"></li>
-                </ul>
-            </div>
-        </footer>
+        <div include-file="gym_footer_page.html"></div>
     </body>
     <script>
       function goto_link(e)
@@ -150,4 +108,5 @@ When students don’t have a proper foundation, these questions don’t mean muc
         window.location.href="index.html"
       }
       </script>
+      <script src="res/js/include_html.js"></script>
 </html>
