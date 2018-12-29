@@ -1,11 +1,36 @@
 .srvc_blc{
   display:inline-block;
   width: 50%;
-
 }
-.srvc_img{
+#srvc_blc_cnt
+{
+  margin: 5% 0px;
+}
+.srvc_img_r{
   float:right;
-  height: 500px;
   /* background-color:green; */
   text-align: center;
+}
+.srvc_img_l{
+  float:left;
+  text-align: center;
+}
+.srvc_img img{
+  height: 200px;
+  width: 200px;
+}
+.srvc_cntnt{
+  /* background-color:red; */
+  height: 200px;
+  width: 80%;
+  margin-left: 10%;
+}
+.srvc_cntnt p{
+  font-family: 'Sarabun', sans-serif;
+  text-align: justify;
+}
+.srvc_title{
+  text-align: center;
+  margin: 4% 0;
+  font-family: 'Sarabun', sans-serif;
 }

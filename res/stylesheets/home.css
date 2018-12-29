@@ -304,3 +304,20 @@ footer ul li{
 #facebook_link img{
     border-radius: 50%;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px 10px 10px 10px;
+  width: 7px;
+}
+::-webkit-scrollbar:hover{
+  width: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  width: 20px;
+  color:red;
+  cursor:pointer;
+}
