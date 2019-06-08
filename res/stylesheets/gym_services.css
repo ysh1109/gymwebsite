@@ -34,3 +34,16 @@
   margin: 4% 0;
   font-family: 'Sarabun', sans-serif;
 }
+@media only screen and (max-width: 600px)
+{
+  .srvc_blc{
+    display:block;
+    width:100%;
+  }
+  .srvc_img_r{
+    float:none;
+  }
+  .srvc_img_l{
+    float:none;
+  }
+}

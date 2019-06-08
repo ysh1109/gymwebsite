@@ -1,7 +1,8 @@
 #container
 {
     display:inline-block;
-    background-color:blue;
+    background-image:url('res/images/page_images/home_page/Gym/SLIDESHOW_2.JPG');
+    /* background-color:blue; */
     position: relative;
     width: 35%;
     margin-left: 5%;
@@ -13,8 +14,8 @@
 #container_1{
     position: relative;
     /* background-color: whitesmoke; */
-    background-image: url("https://image.freepik.com/free-photo/exercise-weights-iron-dumbbell-with-extra-plates_1423-222.jpg");
-    background-color:red;
+    /* background-image: url("https://image.freepik.com/free-photo/exercise-weights-iron-dumbbell-with-extra-plates_1423-222.jpg"); */
+    /* background-color:red; */
     display:inline-block;
     border-bottom: 10px;
 }
@@ -34,7 +35,7 @@
 
 #title_aboutus{
     position: relative;
-    background-image: url("https://img.freepik.com/free-photo/fitness-hall-with-the-sport-bikes-in-it_9693-1244.jpg?size=338&ext=jpg");
+    /* background-image: url("https://img.freepik.com/free-photo/fitness-hall-with-the-sport-bikes-in-it_9693-1244.jpg?size=338&ext=jpg"); */
 
     height: 150px;
 

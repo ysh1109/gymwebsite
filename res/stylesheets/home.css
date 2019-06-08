@@ -56,11 +56,10 @@
 }
 #info ul li{
   margin: 8px 0px;
-}
-#infolist
+}#infolist
 {
     list-style-type: none;
-    padding: 3px;
+    padding:4px;
 }
 #address
 {
@@ -82,11 +81,11 @@
     background-color: rgba(255,255,255);
     backface-visibility: hidden;
     position: absolute;
-    top: 10.8%;
+    top: 13%;
     left: 17%;
     border-radius:7px;
     border: 2px solid black;
-    z-index: 30;
+    z-index: 300;
     opacity: 0.9;
 }
 .fa{
@@ -123,12 +122,11 @@
     position: relative;
     margin-top:;
     overflow: hidden;
-}
-#trans
+}#trans
 {
     background: linear-gradient(to right, black, grey);
     color:white;
-    border: 2px solid black;
+    border:4px solid black;
     text-align: center;
     font-family: 'PT Serif', serif;
 }
@@ -150,14 +148,17 @@
 }
 #services_flex, #review_flex{
     z-index: 11;
-    width: 90%;
-    margin-left: 5%;
+    /* width: 90%; */
+    /* margin-left: 5%; */
     display:flex;
+    overflow-x: scroll;
 /*    flex-wrap:wrap;*/
     position:relative;
 }
 #services{
-    background:url("https://st3.depositphotos.com/1177973/13711/i/1600/depositphotos_137116848-stock-photo-gym-interior-with-equipment-blurred.jpg");
+    /* background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUoiMQI0DDhK-O7umCcK7T3Wz17dNbcmbj8DnzqEJp4U49WDge"); */
+    /* background-repeat: no-repeat; */
+    background:linear-gradient(to right, black, grey,black 10%,grey, black);
 }
 .services_flex_cl div{
     border: 2px solid black;
@@ -168,7 +169,7 @@
     animation-fill-mode:forwards;
 }
 .services_flex_cl{
-    margin: 20px;
+    margin: 40px;
 }
 .srvcs_flx_img{
     filter:blur(5px);
@@ -253,7 +254,23 @@
         filter:none;
     }
 }
-@media only screen and (max-width : 600px)
+@media only screen and (max-width : 1300px)
+{
+  .menu{
+      position:relative;
+      left:0;
+      opacity:1;
+      margin-left: 0;
+      text-align: center;
+      /* margin-top: 1%; */
+      /* height:auto; */
+  }
+  #header
+  {
+      height: 200px;
+  }
+}
+@media only screen and (max-width : 837px)
 {
     #header{
         height:310px
@@ -280,12 +297,21 @@
         opacity:1;
         margin-left: 0;
         height:auto;
+        text-align: left;
     }
     .menu ul li {
         display:none;
     }
     #services_flex, #review_flex{
         flex-wrap: wrap;
+    }
+    #br_nme{
+        position: absolute;
+        width: 100%;
+        z-index: 11;
+        /* left:50%; */
+        text-align: center;
+        top: 70%;
     }
 }
 footer{

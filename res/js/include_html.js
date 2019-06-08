@@ -9,7 +9,7 @@ for (var i=0; i<al_dvs.length; i++)
   {
     c.push(al_dvs[i]);
     c.push(f);
-    console.log("found!");
+    // console.log("found!");
   }
 }
 for (var i=0; i<c.length; i+=2)
@@ -20,7 +20,7 @@ function load_header_page(f_nme, ob)
 {
   var x = document.getElementsByClassName("bgimage"), y;
 
-  console.log("inside load_header_page f = "+f_nme);
+  // console.log("inside load_header_page f = "+f_nme);
   x = x[0];
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function()

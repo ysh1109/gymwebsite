@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sandeep's Fitness Gym</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|PT+Serif|Work+Sans|Source+Sans+Pro" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="res/stylesheets/home.css" type="text/css" rel="stylesheet">
+    <link href="res/stylesheets/team.css" type="text/css" rel="stylesheet">
+</head>
+
+    <body>
+        <div class="bgimage">
+          <div include-file="gym_header_page.html"></div>
+          <div id="contact_content">
+
+          </div>
+        </div>
+        <script>
+            var ti = document.getElementById("block");
+            ti.addEventListener('click',function(e){
+                       window.location.href="mem1.html";
+            }
+            );
+
+                    function goto_link(e)
+                    {
+                      e.lastElementChild.click();
+                    }
+            function to_index()
+            {
+              window.location.href="index.html"
+            }
+        </script>
+        <script src="res/js/include_html.js"></script>
+        <script>window.onload=()=>{let x = document.getElementById("sixthli");x.style.backgroundColor="black";}</script>
+    </body>
+</html>

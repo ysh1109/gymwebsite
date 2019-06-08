@@ -3,30 +3,28 @@
 <head>
   <title>Gallery</title>
   <link rel="stylesheet" type="text/css" href="res/stylesheets/gallery.css">
+  <link rel="stylesheet" type="text/css" href="res/stylesheets/home.css">
+
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif|PT+Serif|Work+Sans|Source+Sans+Pro" rel="stylesheet">
 </head>
-<body onload="pint_style()">
-<nav class="menu">
-  <!-- <div id="crnt_pge_nme">
-    <a href="gallery.html"><h2>Gallery</h2></a>
-  </div> -->
-    <div  class="rightmenu" >
-          <ul id="navbar_links">
-            <li id = "firstli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="home.html" class="ic"><span class="fa fa-home"></span>HOME</a></li>
-            <li id = "secondli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="brand_sandeep.html" class="ic"><span class="fa fa-building"></span>BRAND SANDEEP</a></li>
-            <li id = "thirdli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="#" class="ic"><span class="fa fa-briefcase"></span>SERVICES</a></li>
-            <li id = "fouthli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="team.html" class="ic"><span class="fa fa-group"></span>TEAM</a></li>
-            <li id = "fifthli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="gallery.html" class="ic"><span class="fa fa-camera"></span>GALLERY</a></li>
-            <li id = "fifthli" class="rgt_mnu_li" onclick="goto_link(this)"><a href="#" class="ic"><span class="fa fa-address-card"></span>CONTACT</a></li>
-        </ul>
-      </div>
-</nav>
+<body onload="">
+  <div class="bgimage">
+      <div include-file="gym_header_page.html"></div>
+  </div>
+
 <div id="gallery-content">
   <div id="gallery-images">
-    <div class="gallery_image">
-      <div><img src="http://b.static.trunity.net/files/299501_299600/299598/vertical-farming-chris-jacobs.jpg" ></div>
-      <!-- <div>OYOYOOYO<br>AAAAA</div> -->
+    <div class="">
+      <span class="gallery_image"><img src="http://b.static.trunity.net/files/299501_299600/299598/vertical-farming-chris-jacobs.jpg" ></span>
+      <span class="gallery_image"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/F-15_vertical_deploy.jpg" ></span>
+      <span class="gallery_image"><img src="https://mobirise.com/bootstrap-carousel/assets2/images/thomas-smith-399133-1707x2560.jpg" ></span>
+      <span class="gallery_image"><img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" ></span>
+
+      <span class="gallery_image"><img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" ></span>
+
+
+      <!-- <div><img src="http://b.static.trunity.net/files/299501_299600/299598/vertical-farming-chris-jacobs.jpg" ></div>
     </div>
     <div class="gallery_image">
       <div><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/F-15_vertical_deploy.jpg" ></div>
@@ -47,23 +45,36 @@
     </div>
     <div class="gallery_image">
       <img src="https://images.pexels.com/photos/917371/pexels-photo-917371.jpeg?auto=compress&cs=tinysrgb&h=350" >
-    </div>
+    </div> -->
   </div>
 </div>
-<footer>
     <div id="social_media_handles">
         <ul id="social_links_list">
-            <li id="google_plus_link"><img src="https://i2.wp.com/onedollargraphics.market/wp-content/uploads/2018/02/google-plus-icon.jpg?fit=500%2C500" alt="Avatar" width="50px"></li>
             <li id="facebook_link"><img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-icon-white-logo-png-transparent.png" alt="Avatar" width="50px"></li>
-            <li id="instagram_link"><img src="http://icons-for-free.com/free-icons/png/512/1620013.png" alt="Avatar" width="50px"></li>
+            <!-- <li id="instagram_link"><img src="http://icons-for-free.com/free-icons/png/512/1620013.png" alt="Avatar" width="50px"></li> -->
         </ul>
     </div>
-</footer>
 </body>
 <script>
+var g_i = document.getElementsByClassName("gallery_image");
+let min_offst=g_i[0].offsetTop;
+
+//getting minimum offset
+for(let s of g_i)
+{
+	min_offst = s.firstElementChild.offsetTop<min_offst?s.firstElementChild.offsetTop:min_offst;
+	s.style.backgroundColor="red";
+//	alert(s.firstElementChild.offsetTop);
+
+//	alert(s.firstElementChild.height);
+}
+for(let s of g_i)
+{
+	s.firstElementChild.style.top=s.firstElementChild.offsetTop-s.firstElementChild.height+"px";//min_offst;
+//	alert(s.style.top);
+}
 function pint_style()
 {
-  var g_i = document.getElementsByClassName("gallery_image");
   var n_c = 5//parseInt(((window.outerWidth*0.8)/g_i[0].clientWidth)) ;
   console.log("n_c = "+n_c);
   var g_c = document.getElementById("gallery-content");
@@ -96,5 +107,7 @@ function goto_link(e)
 {
   e.lastElementChild.click();
 }
+
 </script>
+<script src="res/js/include_html.js"></script>
 </html>

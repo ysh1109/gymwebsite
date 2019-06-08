@@ -4,7 +4,7 @@ function fade_in(op, el)
 {
     if(op<20)
     {
-            el.style.opacity = op/2*0.1;
+            el.style.opacity = op/2*0.2;
             op+=1;
             setTimeout(fade_in, 20, op, el);
     }
@@ -13,7 +13,7 @@ function fade_out(op, el)
 {
     if(op>1)
     {
-            el.style.opacity = op*0.1;
+            el.style.opacity = op*0.2;
             op-=1;
             setTimeout(fade_in, 50, op, el);
     }
@@ -46,7 +46,7 @@ function slide_show(i, j, k)
         ss = setTimeout(slide_show, 3000, 1, document.getElementById("img_4"), document.getElementById("slide_4"));
     }
 }
-setTimeout(slide_show(1, document.getElementById("img_1"), document.getElementById("slide_1")), 2000);
+window.onload = function(){setTimeout(slide_show(1, document.getElementById("img_1"), document.getElementById("slide_1")), 2000);}
 function click_change_slide(num)
 {
         //var all_slides = document.getElementsByClassName("slide_show_img");

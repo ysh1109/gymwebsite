@@ -23,37 +23,6 @@ body{
   margin: 0px;
 
 }
-.rightmenu{
-    border-radius:5px;
-    opacity: 1;
-    margin-left: 5%;
-    background: linear-gradient(to right, #eaf7ff, #ffffff, #ffeded);
-    width: 90%;
-    display:inline-block;
-}
-#navbar_links{
-    text-align: center;
-    padding: 30px;
-}
-#navbar_links li{
-    cursor:pointer;
-    display:inline;
-    padding: 30px;
-}
-#navbar_links li a{
-    text-decoration:none;
-    font-family: 'PT Sans', sans-serif;
-    color:black;
-}
-#navbar_links li span{
-  color:black;
-}
-#navbar_links li:hover {
-    background-color:#adaaaa;
-}
-#navbar_links li:hover .nav_link{
-    color:black;
-}
 #gallery-content{
     border-radius: 5px;
     opacity: 0.9;
@@ -67,10 +36,10 @@ body{
   opacity: 0.8;
 }
 .gallery_image{
-  opacity: 1;
+  /* opacity: 1; */
   background-color:white;
   position: relative;
-  display:inline-block;
+  /* display:inline-block; */
   margin:0 10px;
   border-radius: 2%;
 }
@@ -95,9 +64,6 @@ footer ul li{
 }
 #instagram_link img{
     border-radius: 50%;
-}
-#google_plus_link img{
-    border-radius:50%;
 }
 #facebook_link img{
     border-radius: 50%;
